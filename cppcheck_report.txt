@@ -1,0 +1,3518 @@
+modules/pico_6lowpan.c:198:20: warning:inconclusive: Possible null pointer dereference: i [nullPointer]
+        if ((key = i->keyValue)) {
+                   ^
+modules/pico_6lowpan.c:194:32: note: Assignment 'i=NULL', assigned value is 0
+    struct pico_tree_node *i = NULL, *next = NULL;
+                               ^
+modules/pico_6lowpan.c:198:20: note: Null pointer dereference
+        if ((key = i->keyValue)) {
+                   ^
+modules/pico_6lowpan.c:1287:14: style: The scope of the variable 'left' can be reduced. [variableScope]
+    uint16_t left = 0;
+             ^
+modules/pico_6lowpan.c:1288:14: style: The scope of the variable 'copy' can be reduced. [variableScope]
+    uint16_t copy = 0, alloc = FRAGN_SIZE;
+             ^
+modules/pico_6lowpan.c:1288:24: style: The scope of the variable 'alloc' can be reduced. [variableScope]
+    uint16_t copy = 0, alloc = FRAGN_SIZE;
+                       ^
+modules/pico_6lowpan.c:1290:13: style: The scope of the variable 'units' can be reduced. [variableScope]
+    uint8_t units = 0;
+            ^
+modules/pico_6lowpan.c:1291:13: style: The scope of the variable 'avail' can be reduced. [variableScope]
+    int32_t avail = 0, ret = 0;
+            ^
+modules/pico_6lowpan.c:1291:24: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int32_t avail = 0, ret = 0;
+                       ^
+modules/pico_6lowpan.c:1338:13: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int32_t ret = 0;
+            ^
+modules/pico_6lowpan.c:93:12: style: struct member 'hdr_field::ori_size' is never used. [unusedStructMember]
+    int8_t ori_size;
+           ^
+modules/pico_6lowpan.c:94:15: style: struct member 'hdr_field::compress' is never used. [unusedStructMember]
+    int8_t (* compress)(uint8_t *, uint8_t *, uint8_t *, union pico_ll_addr *, union pico_ll_addr *, struct pico_device *);
+              ^
+modules/pico_6lowpan.c:95:15: style: struct member 'hdr_field::decompress' is never used. [unusedStructMember]
+    int8_t (* decompress)(uint8_t *, uint8_t *, uint8_t *, union pico_ll_addr *, union pico_ll_addr *, struct pico_device *);
+              ^
+modules/pico_6lowpan.c:165:17: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int32_t ret = 0;
+                ^
+modules/pico_6lowpan.c:1287:19: style: Variable 'left' is assigned a value that is never used. [unreadVariable]
+    uint16_t left = 0;
+                  ^
+modules/pico_6lowpan.c:1288:19: style: Variable 'copy' is assigned a value that is never used. [unreadVariable]
+    uint16_t copy = 0, alloc = FRAGN_SIZE;
+                  ^
+modules/pico_6lowpan.c:1291:19: style: Variable 'avail' is assigned a value that is never used. [unreadVariable]
+    int32_t avail = 0, ret = 0;
+                  ^
+modules/pico_6lowpan.c:1291:28: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int32_t avail = 0, ret = 0;
+                           ^
+modules/pico_6lowpan.c:1338:17: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int32_t ret = 0;
+                ^
+modules/pico_6lowpan.c:709:32: warning: Either the condition '!inline_buf' is redundant or there is pointer arithmetic with NULL pointer. [nullPointerArithmeticRedundantCheck]
+    uint8_t *comp = inline_buf + 3;
+                               ^
+modules/pico_6lowpan.c:716:9: note: Assuming that condition '!inline_buf' is not redundant
+    if (!inline_buf) {
+        ^
+modules/pico_6lowpan.c:709:32: note: Null pointer addition
+    uint8_t *comp = inline_buf + 3;
+                               ^
+modules/pico_6lowpan.c:474:13: style: The scope of the variable 'iid' can be reduced. [variableScope]
+    uint8_t iid[8] = {0};
+            ^
+modules/pico_6lowpan.c:712:13: style: The scope of the variable 'i' can be reduced. [variableScope]
+    int32_t i = 0, ret = 0;
+            ^
+modules/pico_6lowpan.c:712:20: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int32_t i = 0, ret = 0;
+                   ^
+modules/pico_6lowpan.c:750:13: style: The scope of the variable 'i' can be reduced. [variableScope]
+    int32_t i = 0, ret = 0, ctx = f->net_hdr[1] & CTX_EXTENSION;
+            ^
+modules/pico_6lowpan.c:750:20: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int32_t i = 0, ret = 0, ctx = f->net_hdr[1] & CTX_EXTENSION;
+                   ^
+modules/pico_6lowpan.c:830:13: style: The scope of the variable 'payload_len' can be reduced. [variableScope]
+    int32_t payload_len = 0;
+            ^
+modules/pico_6lowpan.c:939:13: style: The scope of the variable 'eid' can be reduced. [variableScope]
+    uint8_t eid = 0;
+            ^
+modules/pico_6lowpan.c:1014:13: style: The scope of the variable 'len' can be reduced. [variableScope]
+    int32_t len = 0, head = 0, alloc = 0;
+            ^
+modules/pico_6lowpan.c:1014:32: style: The scope of the variable 'alloc' can be reduced. [variableScope]
+    int32_t len = 0, head = 0, alloc = 0;
+                               ^
+modules/pico_6lowpan.c:1017:13: style: The scope of the variable 'nh' can be reduced. [variableScope]
+    uint8_t nh = 0;
+            ^
+modules/pico_6lowpan.c:1063:13: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int32_t ret = 0, i = 0;
+            ^
+modules/pico_6lowpan.c:712:15: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+    int32_t i = 0, ret = 0;
+              ^
+modules/pico_6lowpan.c:712:24: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int32_t i = 0, ret = 0;
+                       ^
+modules/pico_6lowpan.c:750:15: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+    int32_t i = 0, ret = 0, ctx = f->net_hdr[1] & CTX_EXTENSION;
+              ^
+modules/pico_6lowpan.c:750:24: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int32_t i = 0, ret = 0, ctx = f->net_hdr[1] & CTX_EXTENSION;
+                       ^
+modules/pico_6lowpan.c:830:25: style: Variable 'payload_len' is assigned a value that is never used. [unreadVariable]
+    int32_t payload_len = 0;
+                        ^
+modules/pico_6lowpan.c:939:17: style: Variable 'eid' is assigned a value that is never used. [unreadVariable]
+    uint8_t eid = 0;
+                ^
+modules/pico_6lowpan.c:1014:17: style: Variable 'len' is assigned a value that is never used. [unreadVariable]
+    int32_t len = 0, head = 0, alloc = 0;
+                ^
+modules/pico_6lowpan.c:1014:38: style: Variable 'alloc' is assigned a value that is never used. [unreadVariable]
+    int32_t len = 0, head = 0, alloc = 0;
+                                     ^
+modules/pico_6lowpan.c:1017:16: style: Variable 'nh' is assigned a value that is never used. [unreadVariable]
+    uint8_t nh = 0;
+               ^
+modules/pico_6lowpan.c:1063:17: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int32_t ret = 0, i = 0;
+                ^
+modules/pico_6lowpan_ll.c:311:20: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int32_t i = 0, ret = 0;
+                   ^
+modules/pico_6lowpan_ll.c:347:13: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int32_t ret = 0;
+            ^
+modules/pico_6lowpan_ll.c:283:17: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int32_t ret = 0, i = 0;
+                ^
+modules/pico_6lowpan_ll.c:311:24: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int32_t i = 0, ret = 0;
+                       ^
+modules/pico_6lowpan_ll.c:347:17: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int32_t ret = 0;
+                ^
+modules/pico_6lowpan_ll.c:109:15: warning:inconclusive: Possible null pointer dereference: i [nullPointer]
+        key = i->keyValue;
+              ^
+modules/pico_6lowpan_ll.c:106:32: note: Assignment 'i=NULL', assigned value is 0
+    struct pico_tree_node *i = NULL;
+                               ^
+modules/pico_6lowpan_ll.c:109:15: note: Null pointer dereference
+        key = i->keyValue;
+              ^
+modules/pico_802154.c:295:19: style: Variable 'addr.mode' is reassigned a value before the old one has been used. [redundantAssignment]
+        addr.mode = AM_6LOWPAN_SHORT;
+                  ^
+modules/pico_802154.c:290:15: note: addr.mode is assigned
+    addr.mode = AM_6LOWPAN_NONE;
+              ^
+modules/pico_802154.c:295:19: note: addr.mode is overwritten
+        addr.mode = AM_6LOWPAN_SHORT;
+                  ^
+modules/pico_802154.c:220:14: style: The scope of the variable 'grow' can be reduced. [variableScope]
+    uint32_t grow = 0;
+             ^
+modules/pico_802154.c:221:13: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int32_t ret = 0;
+            ^
+modules/pico_802154.c:220:19: style: Variable 'grow' is assigned a value that is never used. [unreadVariable]
+    uint32_t grow = 0;
+                  ^
+modules/pico_802154.c:221:17: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int32_t ret = 0;
+                ^
+modules/pico_aodv.c:146:25: style: The scope of the variable 'dev' can be reduced. [variableScope]
+    struct pico_device *dev;
+                        ^
+modules/pico_aodv.c:430:20: style: The scope of the variable 'aodv_pkt' can be reduced. [variableScope]
+    static uint8_t aodv_pkt[AODV_MAX_PKT];
+                   ^
+modules/pico_aodv.c:434:9: style: The scope of the variable 'r' can be reduced. [variableScope]
+    int r;
+        ^
+modules/pico_aodv.c:471:25: style: The scope of the variable 'dev' can be reduced. [variableScope]
+    struct pico_device *dev;
+                        ^
+modules/pico_aodv.c:527:25: style: The scope of the variable 'dev' can be reduced. [variableScope]
+    struct pico_device *dev;
+                        ^
+modules/pico_aodv.c:586:28: style: The scope of the variable 'node' can be reduced. [variableScope]
+    struct pico_aodv_node *node;
+                           ^
+modules/pico_aodv.c:211:16: style: Variable 'reply.dseq' is assigned a value that is never used. [unreadVariable]
+    reply.dseq = req->dseq;
+               ^
+modules/pico_arp.c:37:24: style: The scope of the variable 'f' can be reduced. [variableScope]
+    struct pico_frame *f;
+                       ^
+modules/pico_arp.c:160:24: style: The scope of the variable 'f' can be reduced. [variableScope]
+    struct pico_frame *f;
+                       ^
+modules/pico_arp.c:244:22: style: The scope of the variable 'a' can be reduced. [variableScope]
+    struct pico_arp *a;
+                     ^
+modules/pico_dev_ipc.c:34:9: style: The scope of the variable 'len' can be reduced. [variableScope]
+    int len;
+        ^
+modules/pico_dev_ipc.c:52:43: style:inconclusive: Function 'pico_ipc_destroy' argument 1 names different: declaration 'ipc' definition 'dev'. [funcArgNamesDifferent]
+void pico_ipc_destroy(struct pico_device *dev)
+                                          ^
+modules/pico_dev_ipc.h:11:43: note: Function 'pico_ipc_destroy' argument 1 names different: declaration 'ipc' definition 'dev'.
+void pico_ipc_destroy(struct pico_device *ipc);
+                                          ^
+modules/pico_dev_ipc.c:52:43: note: Function 'pico_ipc_destroy' argument 1 names different: declaration 'ipc' definition 'dev'.
+void pico_ipc_destroy(struct pico_device *dev)
+                                          ^
+modules/pico_dev_mock.c:259:22: portability: 'buf' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    memcpy(&ret, buf + start + 12, 4);
+                     ^
+modules/pico_dev_mock.c:259:30: portability: 'buf+start' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    memcpy(&ret, buf + start + 12, 4);
+                             ^
+modules/pico_dev_mock.c:288:23: portability: 'buf' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    memcpy(&type, buf + start + 9, 1);
+                      ^
+modules/pico_dev_mock.c:288:31: portability: 'buf+start' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    memcpy(&type, buf + start + 9, 1);
+                              ^
+modules/pico_dev_mock.c:301:23: portability: 'buf' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    memcpy(&type, buf + start + 20, 1);
+                      ^
+modules/pico_dev_mock.c:301:31: portability: 'buf+start' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    memcpy(&type, buf + start + 20, 1);
+                              ^
+modules/pico_dev_mock.c:314:23: portability: 'buf' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    memcpy(&type, buf + start + 21, 1);
+                      ^
+modules/pico_dev_mock.c:314:31: portability: 'buf+start' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    memcpy(&type, buf + start + 21, 1);
+                              ^
+modules/pico_dev_pcap.c:47:44: style:inconclusive: Function 'pico_pcap_destroy' argument 1 names different: declaration 'pcap' definition 'dev'. [funcArgNamesDifferent]
+void pico_pcap_destroy(struct pico_device *dev)
+                                           ^
+modules/pico_dev_pcap.h:14:44: note: Function 'pico_pcap_destroy' argument 1 names different: declaration 'pcap' definition 'dev'.
+void pico_pcap_destroy(struct pico_device *pcap);
+                                           ^
+modules/pico_dev_pcap.c:47:44: note: Function 'pico_pcap_destroy' argument 1 names different: declaration 'pcap' definition 'dev'.
+void pico_pcap_destroy(struct pico_device *dev)
+                                           ^
+modules/pico_dev_ppp.c:1186:9: warning: Assignment of function parameter has no effect outside the function. Did you forget dereferencing it? [uselessAssignmentPtrArg]
+        opts += ipcp_request_add_address(opts, IPCP_OPT_NBNS2, ppp->ipcp_nbns2);
+        ^
+modules/pico_dev_ppp.c:450:14: style: Redundant initialization for 'pos'. The initialized value is overwritten before it is read. [redundantInitialization]
+    for (pos = buf; pos < buf + len; pos++)
+             ^
+modules/pico_dev_ppp.c:449:18: note: pos is initialized
+    uint8_t *pos = buf;
+                 ^
+modules/pico_dev_ppp.c:450:14: note: pos is overwritten
+    for (pos = buf; pos < buf + len; pos++)
+             ^
+modules/pico_dev_ppp.c:600:10: style: The scope of the variable 'at_cgdcont' can be reduced. [variableScope]
+    char at_cgdcont[200];
+         ^
+modules/pico_dev_ppp.c:976:17: style: The scope of the variable 'i' can be reduced. [variableScope]
+        uint8_t i = 0;
+                ^
+modules/pico_dev_ppp.c:2027:21: style: The scope of the variable 'len' can be reduced. [variableScope]
+    static uint32_t len = 0;
+                    ^
+modules/pico_dev_ppp.c:2028:9: style: The scope of the variable 'r' can be reduced. [variableScope]
+    int r;
+        ^
+modules/pico_dev_ppp.c:1044:18: style: Variable 'optflags' is assigned a value that is never used. [unreadVariable]
+        optflags = lcp_optflags(ppp, pkt, len, 1u); /* We want our options adjusted */
+                 ^
+modules/pico_dev_ppp.c:1186:14: style: Variable 'opts' is assigned a value that is never used. [unreadVariable]
+        opts += ipcp_request_add_address(opts, IPCP_OPT_NBNS2, ppp->ipcp_nbns2);
+             ^
+modules/pico_dev_ppp.c:316:18: style: The scope of the variable 'idx' can be reduced. [variableScope]
+        uint32_t idx;
+                 ^
+modules/pico_dev_ppp.c:851:9: style: The scope of the variable 'off' can be reduced. [variableScope]
+    int off;
+        ^
+modules/pico_dev_ppp.c:1427:14: style: The scope of the variable 'idx' can be reduced. [variableScope]
+    uint32_t idx;
+             ^
+modules/pico_dev_radio_mgr.c:298:23: warning: Either the condition 'ret_len<=0' is redundant or the array 'buf[150]' is accessed at index -1, which is out of bounds. [negativeIndex]
+            node = buf[ret_len - 2];
+                      ^
+modules/pico_dev_radio_mgr.c:296:25: note: Assuming that condition 'ret_len<=0' is not redundant
+            if (ret_len <= 0 || ret_len != phy)
+                        ^
+modules/pico_dev_radio_mgr.c:298:23: note: Negative array index
+            node = buf[ret_len - 2];
+                      ^
+modules/pico_dev_radio_mgr.c:133:15: warning:inconclusive: Possible null pointer dereference: i [nullPointer]
+        key = i->keyValue;
+              ^
+modules/pico_dev_radio_mgr.c:129:32: note: Assignment 'i=NULL', assigned value is 0
+    struct pico_tree_node *i = NULL;
+                               ^
+modules/pico_dev_radio_mgr.c:133:15: note: Null pointer dereference
+        key = i->keyValue;
+              ^
+modules/pico_dev_radio_mgr.c:259:15: warning:inconclusive: Possible null pointer dereference: i [nullPointer]
+        key = i->keyValue;
+              ^
+modules/pico_dev_radio_mgr.c:247:32: note: Assignment 'i=NULL', assigned value is 0
+    struct pico_tree_node *i = NULL;
+                               ^
+modules/pico_dev_radio_mgr.c:259:15: note: Null pointer dereference
+        key = i->keyValue;
+              ^
+modules/pico_dev_radio_mgr.c:319:15: warning:inconclusive: Possible null pointer dereference: i [nullPointer]
+        key = i->keyValue;
+              ^
+modules/pico_dev_radio_mgr.c:313:32: note: Assignment 'i=NULL', assigned value is 0
+    struct pico_tree_node *i = NULL, *tmp = NULL;
+                               ^
+modules/pico_dev_radio_mgr.c:319:15: note: Null pointer dereference
+        key = i->keyValue;
+              ^
+modules/pico_dev_radio_mgr.c:88:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+    int j = 1;
+        ^
+modules/pico_dev_radio_mgr.c:337:9: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int ret = 0;
+        ^
+modules/pico_dev_radio_mgr.c:167:12: style: Checking if unsigned expression 'id' is less than zero. [unsignedLessThanZero]
+    if (id <= 0) { // Node's can't have ID '0'.
+           ^
+modules/pico_dev_radio_mgr.c:280:17: style: Variable 'event' is assigned a value that is never used. [unreadVariable]
+    short event = 0;
+                ^
+modules/pico_dev_radio_mgr.c:337:13: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int ret = 0;
+            ^
+modules/pico_dev_radiotest.c:446:15: style: Redundant condition: addr. '!addr || (addr && !area0)' is equivalent to '!addr || !area0' [redundantCondition]
+    if (!addr || (addr && !area0)) {
+              ^
+modules/pico_dev_radiotest.c:258:14: style: The scope of the variable 'q' can be reduced. [variableScope]
+    uint16_t q = 0, i = 0;
+             ^
+modules/pico_dev_radiotest.c:259:13: style: The scope of the variable 'c' can be reduced. [variableScope]
+    uint8_t c = 0;
+            ^
+modules/pico_dev_radiotest.c:360:18: style: The scope of the variable 'dlen' can be reduced. [variableScope]
+    int ret = 0, dlen = 0;
+                 ^
+modules/pico_dev_radiotest.c:314:9: error: Uninitialized variable: ret_len [uninitvar]
+    if (ret_len < 2) { /* Not valid */
+        ^
+modules/pico_dev_radiotest.c:258:16: style: Variable 'q' is assigned a value that is never used. [unreadVariable]
+    uint16_t q = 0, i = 0;
+               ^
+modules/pico_dev_radiotest.c:259:15: style: Variable 'c' is assigned a value that is never used. [unreadVariable]
+    uint8_t c = 0;
+              ^
+modules/pico_dev_radiotest.c:360:23: style: Variable 'dlen' is assigned a value that is never used. [unreadVariable]
+    int ret = 0, dlen = 0;
+                      ^
+modules/pico_dev_radiotest.c:321:0: information: Skipping configuration 'P_LOSS' since the value of 'P_LOSS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (n < P_LOSS) {
+^
+modules/pico_dev_tap.c:64:9: style: The scope of the variable 'len' can be reduced. [variableScope]
+    int len;
+        ^
+modules/pico_dev_tap.c:125:9: style: The scope of the variable 'retval' can be reduced. [variableScope]
+    int retval = -1;
+        ^
+modules/pico_dev_tap.c:83:43: style:inconclusive: Function 'pico_tap_destroy' argument 1 names different: declaration 'tap' definition 'dev'. [funcArgNamesDifferent]
+void pico_tap_destroy(struct pico_device *dev)
+                                          ^
+modules/pico_dev_tap.h:11:43: note: Function 'pico_tap_destroy' argument 1 names different: declaration 'tap' definition 'dev'.
+void pico_tap_destroy(struct pico_device *tap);
+                                          ^
+modules/pico_dev_tap.c:83:43: note: Function 'pico_tap_destroy' argument 1 names different: declaration 'tap' definition 'dev'.
+void pico_tap_destroy(struct pico_device *dev)
+                                          ^
+modules/pico_dev_tap_windows.c:154:14: style: The scope of the variable 'component_id_string' can be reduced. [variableScope]
+        char component_id_string[] = "ComponentId";
+             ^
+modules/pico_dev_tap_windows.c:155:14: style: The scope of the variable 'component_id' can be reduced. [variableScope]
+        char component_id[256];
+             ^
+modules/pico_dev_tap_windows.c:156:14: style: The scope of the variable 'net_cfg_instance_id_string' can be reduced. [variableScope]
+        char net_cfg_instance_id_string[] = "NetCfgInstanceId";
+             ^
+modules/pico_dev_tap_windows.c:157:14: style: The scope of the variable 'net_cfg_instance_id' can be reduced. [variableScope]
+        char net_cfg_instance_id[256];
+             ^
+modules/pico_dev_tap_windows.c:385:9: style: The scope of the variable 'links' can be reduced. [variableScope]
+    int links;
+        ^
+modules/pico_dev_tap_windows.c:474:10: style: The scope of the variable 'device_path' can be reduced. [variableScope]
+    char device_path[256];
+         ^
+modules/pico_dev_tap_windows.c:679:13: style: The scope of the variable 'err' can be reduced. [variableScope]
+        int err;
+            ^
+modules/pico_dev_tap_windows.c:839:13: style: The scope of the variable 'err' can be reduced. [variableScope]
+        int err;
+            ^
+modules/pico_dev_tun.c:37:9: style: The scope of the variable 'len' can be reduced. [variableScope]
+    int len;
+        ^
+modules/pico_dev_tun.c:55:43: style:inconclusive: Function 'pico_tun_destroy' argument 1 names different: declaration 'tun' definition 'dev'. [funcArgNamesDifferent]
+void pico_tun_destroy(struct pico_device *dev)
+                                          ^
+modules/pico_dev_tun.h:11:43: note: Function 'pico_tun_destroy' argument 1 names different: declaration 'tun' definition 'dev'.
+void pico_tun_destroy(struct pico_device *tun);
+                                          ^
+modules/pico_dev_tun.c:55:43: note: Function 'pico_tun_destroy' argument 1 names different: declaration 'tun' definition 'dev'.
+void pico_tun_destroy(struct pico_device *dev)
+                                          ^
+modules/pico_dev_vde.c:52:9: style: The scope of the variable 'len' can be reduced. [variableScope]
+    int len;
+        ^
+modules/pico_dev_vde.c:73:43: style:inconclusive: Function 'pico_vde_destroy' argument 1 names different: declaration 'vde' definition 'dev'. [funcArgNamesDifferent]
+void pico_vde_destroy(struct pico_device *dev)
+                                          ^
+modules/pico_dev_vde.h:13:43: note: Function 'pico_vde_destroy' argument 1 names different: declaration 'vde' definition 'dev'.
+void pico_vde_destroy(struct pico_device *vde);
+                                          ^
+modules/pico_dev_vde.c:73:43: note: Function 'pico_vde_destroy' argument 1 names different: declaration 'vde' definition 'dev'.
+void pico_vde_destroy(struct pico_device *dev)
+                                          ^
+modules/pico_dhcp_client.c:256:37: style: The scope of the variable 'dhcpc' can be reduced. [variableScope]
+    struct pico_dhcp_client_cookie *dhcpc;
+                                    ^
+modules/pico_dhcp_client.c:444:65: style:inconclusive: Function 'pico_dhcp_initiate_negotiation' argument 1 names different: declaration 'device' definition 'dev'. [funcArgNamesDifferent]
+int MOCKABLE pico_dhcp_initiate_negotiation(struct pico_device *dev, void (*cb)(void *dhcpc, int code), uint32_t *uid)
+                                                                ^
+modules/pico_dhcp_client.h:16:56: note: Function 'pico_dhcp_initiate_negotiation' argument 1 names different: declaration 'device' definition 'dev'.
+int pico_dhcp_initiate_negotiation(struct pico_device *device, void (*callback)(void*cli, int code), uint32_t *xid);
+                                                       ^
+modules/pico_dhcp_client.c:444:65: note: Function 'pico_dhcp_initiate_negotiation' argument 1 names different: declaration 'device' definition 'dev'.
+int MOCKABLE pico_dhcp_initiate_negotiation(struct pico_device *dev, void (*cb)(void *dhcpc, int code), uint32_t *uid)
+                                                                ^
+modules/pico_dhcp_client.c:444:115: style:inconclusive: Function 'pico_dhcp_initiate_negotiation' argument 3 names different: declaration 'xid' definition 'uid'. [funcArgNamesDifferent]
+int MOCKABLE pico_dhcp_initiate_negotiation(struct pico_device *dev, void (*cb)(void *dhcpc, int code), uint32_t *uid)
+                                                                                                                  ^
+modules/pico_dhcp_client.h:16:112: note: Function 'pico_dhcp_initiate_negotiation' argument 3 names different: declaration 'xid' definition 'uid'.
+int pico_dhcp_initiate_negotiation(struct pico_device *device, void (*callback)(void*cli, int code), uint32_t *xid);
+                                                                                                               ^
+modules/pico_dhcp_client.c:444:115: note: Function 'pico_dhcp_initiate_negotiation' argument 3 names different: declaration 'xid' definition 'uid'.
+int MOCKABLE pico_dhcp_initiate_negotiation(struct pico_device *dev, void (*cb)(void *dhcpc, int code), uint32_t *uid)
+                                                                                                                  ^
+modules/pico_dhcp_client.c:1032:53: style:inconclusive: Function 'pico_dhcp_get_address' argument 1 names different: declaration 'cli' definition 'dhcpc'. [funcArgNamesDifferent]
+struct pico_ip4 MOCKABLE pico_dhcp_get_address(void*dhcpc)
+                                                    ^
+modules/pico_dhcp_client.h:18:45: note: Function 'pico_dhcp_get_address' argument 1 names different: declaration 'cli' definition 'dhcpc'.
+struct pico_ip4 pico_dhcp_get_address(void *cli);
+                                            ^
+modules/pico_dhcp_client.c:1032:53: note: Function 'pico_dhcp_get_address' argument 1 names different: declaration 'cli' definition 'dhcpc'.
+struct pico_ip4 MOCKABLE pico_dhcp_get_address(void*dhcpc)
+                                                    ^
+modules/pico_dhcp_client.c:1037:53: style:inconclusive: Function 'pico_dhcp_get_gateway' argument 1 names different: declaration 'cli' definition 'dhcpc'. [funcArgNamesDifferent]
+struct pico_ip4 MOCKABLE pico_dhcp_get_gateway(void*dhcpc)
+                                                    ^
+modules/pico_dhcp_client.h:19:45: note: Function 'pico_dhcp_get_gateway' argument 1 names different: declaration 'cli' definition 'dhcpc'.
+struct pico_ip4 pico_dhcp_get_gateway(void *cli);
+                                            ^
+modules/pico_dhcp_client.c:1037:53: note: Function 'pico_dhcp_get_gateway' argument 1 names different: declaration 'cli' definition 'dhcpc'.
+struct pico_ip4 MOCKABLE pico_dhcp_get_gateway(void*dhcpc)
+                                                    ^
+modules/pico_dhcp_client.c:1042:45: style:inconclusive: Function 'pico_dhcp_get_netmask' argument 1 names different: declaration 'cli' definition 'dhcpc'. [funcArgNamesDifferent]
+struct pico_ip4 pico_dhcp_get_netmask(void *dhcpc)
+                                            ^
+modules/pico_dhcp_client.h:20:45: note: Function 'pico_dhcp_get_netmask' argument 1 names different: declaration 'cli' definition 'dhcpc'.
+struct pico_ip4 pico_dhcp_get_netmask(void *cli);
+                                            ^
+modules/pico_dhcp_client.c:1042:45: note: Function 'pico_dhcp_get_netmask' argument 1 names different: declaration 'cli' definition 'dhcpc'.
+struct pico_ip4 pico_dhcp_get_netmask(void *dhcpc)
+                                            ^
+modules/pico_dhcp_client.c:1047:47: style:inconclusive: Function 'pico_dhcp_get_nameserver' argument 1 names different: declaration 'cli' definition 'dhcpc'. [funcArgNamesDifferent]
+struct pico_ip4 pico_dhcp_get_nameserver(void*dhcpc, int index)
+                                              ^
+modules/pico_dhcp_client.h:21:47: note: Function 'pico_dhcp_get_nameserver' argument 1 names different: declaration 'cli' definition 'dhcpc'.
+struct pico_ip4 pico_dhcp_get_nameserver(void*cli, int index);
+                                              ^
+modules/pico_dhcp_client.c:1047:47: note: Function 'pico_dhcp_get_nameserver' argument 1 names different: declaration 'cli' definition 'dhcpc'.
+struct pico_ip4 pico_dhcp_get_nameserver(void*dhcpc, int index)
+                                              ^
+modules/pico_dhcp_server.c:396:64: style:inconclusive: Function 'pico_dhcp_server_initiate' argument 1 names different: declaration 'dhcps' definition 'setting'. [funcArgNamesDifferent]
+int pico_dhcp_server_initiate(struct pico_dhcp_server_setting *setting)
+                                                               ^
+modules/pico_dhcp_server.h:28:64: note: Function 'pico_dhcp_server_initiate' argument 1 names different: declaration 'dhcps' definition 'setting'.
+int pico_dhcp_server_initiate(struct pico_dhcp_server_setting *dhcps);
+                                                               ^
+modules/pico_dhcp_server.c:396:64: note: Function 'pico_dhcp_server_initiate' argument 1 names different: declaration 'dhcps' definition 'setting'.
+int pico_dhcp_server_initiate(struct pico_dhcp_server_setting *setting)
+                                                               ^
+modules/pico_dhcp_server.c:279:12: style: Variable 'offset' is assigned a value that is never used. [unreadVariable]
+    offset += pico_dhcp_opt_end(DHCP_OPT(hdr, offset));
+           ^
+modules/pico_dns_client.c:320:14: style: The scope of the variable 'comp' can be reduced. [variableScope]
+    uint16_t comp = 0, compression = 0;
+             ^
+modules/pico_dns_client.c:320:24: style: The scope of the variable 'compression' can be reduced. [variableScope]
+    uint16_t comp = 0, compression = 0;
+                       ^
+modules/pico_dns_client.c:666:9: style: The scope of the variable 'count' can be reduced. [variableScope]
+    int count;
+        ^
+modules/pico_dns_client.c:320:19: style: Variable 'comp' is assigned a value that is never used. [unreadVariable]
+    uint16_t comp = 0, compression = 0;
+                  ^
+modules/pico_dns_client.c:320:36: style: Variable 'compression' is assigned a value that is never used. [unreadVariable]
+    uint16_t comp = 0, compression = 0;
+                                   ^
+modules/pico_dns_client.c:674:23: style: Variable 'label' is assigned a value that is never used. [unreadVariable]
+                label = ++p;
+                      ^
+modules/pico_dns_client.c:788:42: style:inconclusive: Function 'pico_dns_client_getname6' argument 1 names different: declaration 'url' definition 'ip'. [funcArgNamesDifferent]
+int pico_dns_client_getname6(const char *ip, void (*callback)(char *, void *), void *arg)
+                                         ^
+modules/pico_dns_client.h:47:42: note: Function 'pico_dns_client_getname6' argument 1 names different: declaration 'url' definition 'ip'.
+int pico_dns_client_getname6(const char *url, void (*callback)(char *, void *), void *arg);
+                                         ^
+modules/pico_dns_client.c:788:42: note: Function 'pico_dns_client_getname6' argument 1 names different: declaration 'url' definition 'ip'.
+int pico_dns_client_getname6(const char *ip, void (*callback)(char *, void *), void *arg)
+                                         ^
+modules/pico_dns_common.c:1167:16: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        item = node->keyValue;
+               ^
+modules/pico_dns_common.c:1157:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL, *next = NULL;
+                                  ^
+modules/pico_dns_common.c:1161:9: note: Assuming condition is false
+    if (!tree) {
+        ^
+modules/pico_dns_common.c:1167:16: note: Null pointer dereference
+        item = node->keyValue;
+               ^
+modules/pico_dns_common.c:1168:32: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        pico_tree_delete(tree, node->keyValue);
+                               ^
+modules/pico_dns_common.c:1157:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL, *next = NULL;
+                                  ^
+modules/pico_dns_common.c:1161:9: note: Assuming condition is false
+    if (!tree) {
+        ^
+modules/pico_dns_common.c:1168:32: note: Null pointer dereference
+        pico_tree_delete(tree, node->keyValue);
+                               ^
+modules/pico_dns_common.c:1206:26: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((node_item = node->keyValue)) {
+                         ^
+modules/pico_dns_common.c:1194:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_dns_common.c:1199:15: note: Assuming condition is false
+    if (!tree || !size) {
+              ^
+modules/pico_dns_common.c:1206:26: note: Null pointer dereference
+        if ((node_item = node->keyValue)) {
+                         ^
+modules/pico_dns_common.c:1228:13: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if (node->keyValue)
+            ^
+modules/pico_dns_common.c:1224:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_dns_common.c:1228:13: note: Null pointer dereference
+        if (node->keyValue)
+            ^
+modules/pico_dns_common.c:1257:48: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        question = (struct pico_dns_question *)node->keyValue;
+                                               ^
+modules/pico_dns_common.c:1246:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL, *next = NULL;
+                                  ^
+modules/pico_dns_common.c:1250:16: note: Assuming condition is false
+    if (!qtree || !name) {
+               ^
+modules/pico_dns_common.c:1257:48: note: Null pointer dereference
+        question = (struct pico_dns_question *)node->keyValue;
+                                               ^
+modules/pico_dns_common.c:1289:48: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        question = (struct pico_dns_question *)node->keyValue;
+                                               ^
+modules/pico_dns_common.c:1278:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_dns_common.c:1282:16: note: Assuming condition is false
+    if (!qtree || !name) {
+               ^
+modules/pico_dns_common.c:1289:48: note: Null pointer dereference
+        question = (struct pico_dns_question *)node->keyValue;
+                                               ^
+modules/pico_dns_common.c:1356:18: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        record = node->keyValue;
+                 ^
+modules/pico_dns_common.c:1352:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_dns_common.c:1356:18: note: Null pointer dereference
+        record = node->keyValue;
+                 ^
+modules/pico_dns_common.c:1440:20: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        question = node->keyValue;
+                   ^
+modules/pico_dns_common.c:1425:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_dns_common.c:1431:17: note: Assuming condition is false
+    if (!packet || !qtree) {
+                ^
+modules/pico_dns_common.c:1440:20: note: Null pointer dereference
+        question = node->keyValue;
+                   ^
+modules/pico_dns_common.c:323:15: style: Redundant initialization for 'c'. The initialized value is overwritten before it is read. [redundantInitialization]
+    while ((c = *++i) != '\0') {
+              ^
+modules/pico_dns_common.c:313:12: note: c is initialized
+    char c = '\0';
+           ^
+modules/pico_dns_common.c:323:15: note: c is overwritten
+    while ((c = *++i) != '\0') {
+              ^
+modules/pico_dns_common.c:389:29: style:inconclusive: Function 'pico_dns_mirror_addr' argument 1 names different: declaration 'ptr' definition 'ip'. [funcArgNamesDifferent]
+pico_dns_mirror_addr( char *ip )
+                            ^
+modules/pico_dns_common.h:228:29: note: Function 'pico_dns_mirror_addr' argument 1 names different: declaration 'ptr' definition 'ip'.
+pico_dns_mirror_addr( char *ptr );
+                            ^
+modules/pico_dns_common.c:389:29: note: Function 'pico_dns_mirror_addr' argument 1 names different: declaration 'ptr' definition 'ip'.
+pico_dns_mirror_addr( char *ip )
+                            ^
+modules/pico_dns_common.c:1314:39: style:inconclusive: Function 'pico_dns_fill_packet_header' argument 4 names different: declaration 'authcount' definition 'nscount'. [funcArgNamesDifferent]
+                             uint16_t nscount,
+                                      ^
+modules/pico_dns_common.h:489:39: note: Function 'pico_dns_fill_packet_header' argument 4 names different: declaration 'authcount' definition 'nscount'.
+                             uint16_t authcount,
+                                      ^
+modules/pico_dns_common.c:1314:39: note: Function 'pico_dns_fill_packet_header' argument 4 names different: declaration 'authcount' definition 'nscount'.
+                             uint16_t nscount,
+                                      ^
+modules/pico_dns_common.c:1315:39: style:inconclusive: Function 'pico_dns_fill_packet_header' argument 5 names different: declaration 'addcount' definition 'arcount'. [funcArgNamesDifferent]
+                             uint16_t arcount )
+                                      ^
+modules/pico_dns_common.h:490:39: note: Function 'pico_dns_fill_packet_header' argument 5 names different: declaration 'addcount' definition 'arcount'.
+                             uint16_t addcount );
+                                      ^
+modules/pico_dns_common.c:1315:39: note: Function 'pico_dns_fill_packet_header' argument 5 names different: declaration 'addcount' definition 'arcount'.
+                             uint16_t arcount )
+                                      ^
+modules/pico_dns_common.c:1522:25: warning: Char literal compared with pointer 'lbl_iterator'. Did you intend to dereference it? [charLiteralWithCharPtrCompare]
+    while (lbl_iterator != '\0') {
+                        ^
+modules/pico_dns_common.c:92:18: style: Variable 'ptr' is assigned a value that is never used. [unreadVariable]
+    uint16_t ptr = 0, nslen = 0;
+                 ^
+modules/pico_dns_common.c:1009:13: style: Variable 'dif' is assigned a value that is never used. [unreadVariable]
+    int dif = 0;
+            ^
+modules/pico_dns_common.c:1505:18: style: Variable 'ptr' is assigned a value that is never used. [unreadVariable]
+    uint16_t ptr = 0;
+                 ^
+modules/pico_dns_common.c:1506:25: style: Variable 'difference' is assigned a value that is never used. [unreadVariable]
+    uint16_t difference = 0;
+                        ^
+modules/pico_dns_sd.c:223:5: warning: Assignment of function parameter has no effect outside the function. Did you forget dereferencing it? [uselessAssignmentPtrArg]
+    kv_pair = NULL;
+    ^
+modules/pico_dns_sd.c:148:32: style: The scope of the variable 'pair_len' can be reduced. [variableScope]
+    uint16_t i = 0, txt_i = 0, pair_len = 0, key_len = 0, value_len = 0;
+                               ^
+modules/pico_dns_sd.c:148:46: style: The scope of the variable 'key_len' can be reduced. [variableScope]
+    uint16_t i = 0, txt_i = 0, pair_len = 0, key_len = 0, value_len = 0;
+                                             ^
+modules/pico_dns_sd.c:148:41: style: Variable 'pair_len' is assigned a value that is never used. [unreadVariable]
+    uint16_t i = 0, txt_i = 0, pair_len = 0, key_len = 0, value_len = 0;
+                                        ^
+modules/pico_dns_sd.c:148:54: style: Variable 'key_len' is assigned a value that is never used. [unreadVariable]
+    uint16_t i = 0, txt_i = 0, pair_len = 0, key_len = 0, value_len = 0;
+                                                     ^
+modules/pico_ethernet.c:417:30: style: The scope of the variable 'hdr' can be reduced. [variableScope]
+        struct pico_eth_hdr *hdr;
+                             ^
+modules/pico_ethernet.c:182:30: style: Variable 'hdr' is assigned a value that is never used. [unreadVariable]
+    struct pico_eth_hdr *hdr = (struct pico_eth_hdr *) f->datalink_hdr;
+                             ^
+modules/pico_fragments.c:219:24: style: The scope of the variable 'cur' can be reduced. [variableScope]
+    struct pico_frame *cur;
+                       ^
+modules/pico_fragments.c:306:36: style: The scope of the variable 'tmp' can be reduced. [variableScope]
+    struct pico_tree_node *index, *tmp;
+                                   ^
+modules/pico_fragments.c:307:24: style: The scope of the variable 'f' can be reduced. [variableScope]
+    struct pico_frame *f;
+                       ^
+modules/pico_fragments.c:309:18: style: The scope of the variable 'bookmark' can be reduced. [variableScope]
+    unsigned int bookmark = 0;
+                 ^
+modules/pico_hotplug_detection.c:52:14: warning:inconclusive: Possible null pointer dereference: cb_node [nullPointer]
+        cb = cb_node->keyValue;
+             ^
+modules/pico_hotplug_detection.c:48:38: note: Assignment 'cb_node=NULL', assigned value is 0
+    struct pico_tree_node *cb_node = NULL, *cb_safe = NULL;
+                                     ^
+modules/pico_hotplug_detection.c:52:14: note: Null pointer dereference
+        cb = cb_node->keyValue;
+             ^
+modules/pico_hotplug_detection.c:67:18: warning:inconclusive: Possible null pointer dereference: cb_node [nullPointer]
+            cb = cb_node->keyValue;
+                 ^
+modules/pico_hotplug_detection.c:60:38: note: Assignment 'cb_node=NULL', assigned value is 0
+    struct pico_tree_node *cb_node = NULL, *cb_safe = NULL;
+                                     ^
+modules/pico_hotplug_detection.c:67:18: note: Null pointer dereference
+            cb = cb_node->keyValue;
+                 ^
+modules/pico_hotplug_detection.c:83:17: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        hpdev = node->keyValue;
+                ^
+modules/pico_hotplug_detection.c:76:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL, *safe = NULL;
+                                  ^
+modules/pico_hotplug_detection.c:83:17: note: Null pointer dereference
+        hpdev = node->keyValue;
+                ^
+modules/pico_hotplug_detection.c:49:12: style: The scope of the variable 'cb' can be reduced. [variableScope]
+    void (*cb)(struct pico_device *dev, int event);
+           ^
+modules/pico_hotplug_detection.c:61:12: style: The scope of the variable 'cb' can be reduced. [variableScope]
+    void (*cb)(struct pico_device *dev, int event);
+           ^
+modules/pico_hotplug_detection.c:77:9: style: The scope of the variable 'new_state' can be reduced. [variableScope]
+    int new_state, event;
+        ^
+modules/pico_icmp4.c:75:12: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+    } else if (hdr->type == PICO_ICMP_ECHOREPLY) {
+           ^
+modules/pico_icmp4.c:80:7: note: Found duplicate branches for 'if' and 'else'.
+    } else {
+      ^
+modules/pico_icmp4.c:75:12: note: Found duplicate branches for 'if' and 'else'.
+    } else if (hdr->type == PICO_ICMP_ECHOREPLY) {
+           ^
+modules/pico_icmp4.c:311:36: style: The scope of the variable 'newcookie' can be reduced. [variableScope]
+    struct pico_icmp4_ping_cookie *newcookie, *cookie = (struct pico_icmp4_ping_cookie *)arg;
+                                   ^
+modules/pico_icmp6.c:359:15: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+    uint8_t i = 0;
+              ^
+modules/pico_icmp6.c:360:18: style: Variable 'len' is assigned a value that is never used. [unreadVariable]
+    uint16_t len = 0;
+                 ^
+modules/pico_icmp6.c:595:33: style: Variable 'prefix_addr' is assigned a value that is never used. [unreadVariable]
+    struct pico_ip6 prefix_addr = {{ 0x00 }};
+                                ^
+modules/pico_icmp6.c:299:63: warning: Either the condition 'dev' is redundant or there is possible null pointer dereference: dev. [nullPointerRedundantCheck]
+ struct pico_6lowpan_info *info = (struct pico_6lowpan_info *)dev->eth;
+                                                              ^
+modules/pico_icmp6.c:309:14: note: Assuming that condition 'dev' is not redundant
+    else if (PICO_DEV_IS_6LOWPAN(dev) && dev->eth) {
+             ^
+modules/pico_icmp6.c:299:63: note: Null pointer dereference
+ struct pico_6lowpan_info *info = (struct pico_6lowpan_info *)dev->eth;
+                                                              ^
+modules/pico_igmp.c:406:31: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        ((struct igmp_timer *)index->keyValue)->stopped = IGMP_TIMER_STOPPED;
+                              ^
+modules/pico_igmp.c:395:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_igmp.c:398:9: note: Assuming condition is false
+    if (!link)
+        ^
+modules/pico_igmp.c:406:31: note: Null pointer dereference
+        ((struct igmp_timer *)index->keyValue)->stopped = IGMP_TIMER_STOPPED;
+                              ^
+modules/pico_igmp.c:407:39: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        pico_tree_delete(&IGMPTimers, index->keyValue);
+                                      ^
+modules/pico_igmp.c:395:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_igmp.c:398:9: note: Assuming condition is false
+    if (!link)
+        ^
+modules/pico_igmp.c:407:39: note: Null pointer dereference
+        pico_tree_delete(&IGMPTimers, index->keyValue);
+                                      ^
+modules/pico_igmp.c:476:39: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+                ((struct igmp_timer *)index->keyValue)->stopped = IGMP_TIMER_STOPPED;
+                                      ^
+modules/pico_igmp.c:435:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_igmp.c:447:9: note: Assuming condition is false
+    if (!link)
+        ^
+modules/pico_igmp.c:476:39: note: Null pointer dereference
+                ((struct igmp_timer *)index->keyValue)->stopped = IGMP_TIMER_STOPPED;
+                                      ^
+modules/pico_igmp.c:477:47: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+                pico_tree_delete(&IGMPTimers, index->keyValue);
+                                              ^
+modules/pico_igmp.c:435:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_igmp.c:447:9: note: Assuming condition is false
+    if (!link)
+        ^
+modules/pico_igmp.c:477:47: note: Null pointer dereference
+                pico_tree_delete(&IGMPTimers, index->keyValue);
+                                              ^
+modules/pico_igmp.c:755:50: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            source_addr[i] = ((struct pico_ip4 *)index->keyValue)->addr;
+                                                 ^
+modules/pico_igmp.c:726:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_igmp.c:755:50: note: Null pointer dereference
+            source_addr[i] = ((struct pico_ip4 *)index->keyValue)->addr;
+                                                 ^
+modules/pico_igmp.c:1112:18: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            _p = index->keyValue;
+                 ^
+modules/pico_igmp.c:1106:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_igmp.c:1112:18: note: Null pointer dereference
+            _p = index->keyValue;
+                 ^
+modules/pico_igmp.c:794:12: style: The scope of the variable 'result' can be reduced. [variableScope]
+    int8_t result;
+           ^
+modules/pico_ipfilter.c:145:9: style: The scope of the variable 'cmp' can be reduced. [variableScope]
+    int cmp;
+        ^
+modules/pico_ipfilter.c:159:9: style: The scope of the variable 'cmp' can be reduced. [variableScope]
+    int cmp;
+        ^
+modules/pico_ipfilter.c:172:9: style: The scope of the variable 'cmp' can be reduced. [variableScope]
+    int cmp;
+        ^
+modules/pico_ipfilter.c:184:9: style: The scope of the variable 'cmp' can be reduced. [variableScope]
+    int cmp;
+        ^
+modules/pico_ipfilter.c:196:9: style: The scope of the variable 'cmp' can be reduced. [variableScope]
+    int cmp;
+        ^
+modules/pico_ipfilter.c:208:9: style: The scope of the variable 'cmp' can be reduced. [variableScope]
+    int cmp;
+        ^
+modules/pico_ipfilter.c:440:24: style: The scope of the variable 'trans' can be reduced. [variableScope]
+    struct pico_trans *trans;
+                       ^
+modules/pico_ipv4.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 22 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+modules/pico_ipv4.c:79:17: warning: The address of local variable 'ip' might be accessed at non-zero index. [objectIndex]
+        if (addr[i] > 99) {
+                ^
+modules/pico_ipv4.c:69:57: note: Address of variable taken here.
+    const unsigned char *addr = (const unsigned char *) &ip;
+                                                        ^
+modules/pico_ipv4.c:72:9: note: Assuming condition is false
+    if (!ipbuf) {
+        ^
+modules/pico_ipv4.c:79:17: note: The address of local variable 'ip' might be accessed at non-zero index.
+        if (addr[i] > 99) {
+                ^
+modules/pico_ipv4.c:80:42: warning: The address of local variable 'ip' might be accessed at non-zero index. [objectIndex]
+            *ipbuf++ = (char)('0' + (addr[i] / 100));
+                                         ^
+modules/pico_ipv4.c:69:57: note: Address of variable taken here.
+    const unsigned char *addr = (const unsigned char *) &ip;
+                                                        ^
+modules/pico_ipv4.c:72:9: note: Assuming condition is false
+    if (!ipbuf) {
+        ^
+modules/pico_ipv4.c:80:42: note: The address of local variable 'ip' might be accessed at non-zero index.
+            *ipbuf++ = (char)('0' + (addr[i] / 100));
+                                         ^
+modules/pico_ipv4.c:81:43: warning: The address of local variable 'ip' might be accessed at non-zero index. [objectIndex]
+            *ipbuf++ = (char)('0' + ((addr[i] % 100) / 10));
+                                          ^
+modules/pico_ipv4.c:69:57: note: Address of variable taken here.
+    const unsigned char *addr = (const unsigned char *) &ip;
+                                                        ^
+modules/pico_ipv4.c:72:9: note: Assuming condition is false
+    if (!ipbuf) {
+        ^
+modules/pico_ipv4.c:81:43: note: The address of local variable 'ip' might be accessed at non-zero index.
+            *ipbuf++ = (char)('0' + ((addr[i] % 100) / 10));
+                                          ^
+modules/pico_ipv4.c:82:43: warning: The address of local variable 'ip' might be accessed at non-zero index. [objectIndex]
+            *ipbuf++ = (char)('0' + ((addr[i] % 100) % 10));
+                                          ^
+modules/pico_ipv4.c:69:57: note: Address of variable taken here.
+    const unsigned char *addr = (const unsigned char *) &ip;
+                                                        ^
+modules/pico_ipv4.c:72:9: note: Assuming condition is false
+    if (!ipbuf) {
+        ^
+modules/pico_ipv4.c:82:43: note: The address of local variable 'ip' might be accessed at non-zero index.
+            *ipbuf++ = (char)('0' + ((addr[i] % 100) % 10));
+                                          ^
+modules/pico_ipv4.c:83:24: warning: The address of local variable 'ip' might be accessed at non-zero index. [objectIndex]
+        } else if (addr[i] > 9) {
+                       ^
+modules/pico_ipv4.c:69:57: note: Address of variable taken here.
+    const unsigned char *addr = (const unsigned char *) &ip;
+                                                        ^
+modules/pico_ipv4.c:72:9: note: Assuming condition is false
+    if (!ipbuf) {
+        ^
+modules/pico_ipv4.c:83:24: note: The address of local variable 'ip' might be accessed at non-zero index.
+        } else if (addr[i] > 9) {
+                       ^
+modules/pico_ipv4.c:84:42: warning: The address of local variable 'ip' might be accessed at non-zero index. [objectIndex]
+            *ipbuf++ = (char)('0' + (addr[i] / 10));
+                                         ^
+modules/pico_ipv4.c:69:57: note: Address of variable taken here.
+    const unsigned char *addr = (const unsigned char *) &ip;
+                                                        ^
+modules/pico_ipv4.c:72:9: note: Assuming condition is false
+    if (!ipbuf) {
+        ^
+modules/pico_ipv4.c:84:42: note: The address of local variable 'ip' might be accessed at non-zero index.
+            *ipbuf++ = (char)('0' + (addr[i] / 10));
+                                         ^
+modules/pico_ipv4.c:85:42: warning: The address of local variable 'ip' might be accessed at non-zero index. [objectIndex]
+            *ipbuf++ = (char)('0' + (addr[i] % 10));
+                                         ^
+modules/pico_ipv4.c:69:57: note: Address of variable taken here.
+    const unsigned char *addr = (const unsigned char *) &ip;
+                                                        ^
+modules/pico_ipv4.c:72:9: note: Assuming condition is false
+    if (!ipbuf) {
+        ^
+modules/pico_ipv4.c:85:42: note: The address of local variable 'ip' might be accessed at non-zero index.
+            *ipbuf++ = (char)('0' + (addr[i] % 10));
+                                         ^
+modules/pico_ipv4.c:705:13: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        g = index->keyValue;
+            ^
+modules/pico_ipv4.c:695:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *index2 = NULL;
+                                   ^
+modules/pico_ipv4.c:705:13: note: Null pointer dereference
+        g = index->keyValue;
+            ^
+modules/pico_ipv4.c:708:22: warning:inconclusive: Possible null pointer dereference: index2 [nullPointer]
+            source = index2->keyValue;
+                     ^
+modules/pico_ipv4.c:695:52: note: Assignment 'index2=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *index2 = NULL;
+                                                   ^
+modules/pico_ipv4.c:708:22: note: Null pointer dereference
+            source = index2->keyValue;
+                     ^
+modules/pico_ipv4.c:722:18: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        source = index->keyValue;
+                 ^
+modules/pico_ipv4.c:718:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_ipv4.c:722:18: note: Null pointer dereference
+        source = index->keyValue;
+                 ^
+modules/pico_ipv4.c:871:16: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        link = index->keyValue;
+               ^
+modules/pico_ipv4.c:862:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *index2 = NULL;
+                                   ^
+modules/pico_ipv4.c:871:16: note: Null pointer dereference
+        link = index->keyValue;
+               ^
+modules/pico_ipv4.c:1332:17: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        route = index->keyValue;
+                ^
+modules/pico_ipv4.c:1328:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *tmp = NULL;
+                                   ^
+modules/pico_ipv4.c:1332:17: note: Null pointer dereference
+        route = index->keyValue;
+                ^
+modules/pico_ipv4.c:1416:16: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        link = index->keyValue;
+               ^
+modules/pico_ipv4.c:1412:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_ipv4.c:1416:16: note: Null pointer dereference
+        link = index->keyValue;
+               ^
+modules/pico_ipv4.c:1433:16: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        link = index->keyValue;
+               ^
+modules/pico_ipv4.c:1425:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_ipv4.c:1433:16: note: Null pointer dereference
+        link = index->keyValue;
+               ^
+modules/pico_ipv4.c:1650:16: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        link = index->keyValue;
+               ^
+modules/pico_ipv4.c:1646:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_ipv4.c:1650:16: note: Null pointer dereference
+        link = index->keyValue;
+               ^
+modules/pico_ipv4.c:573:29: style: The scope of the variable 'r' can be reduced. [variableScope]
+    struct pico_ipv4_route *r;
+                            ^
+modules/pico_ipv4.c:1622:28: style: The scope of the variable 'link' can be reduced. [variableScope]
+    struct pico_ipv4_link *link;
+                           ^
+modules/pico_ipv4.c:196:36: style:inconclusive: Function 'pico_ipv4_is_loopback' argument 1 names different: declaration 'addr' definition 'address'. [funcArgNamesDifferent]
+int pico_ipv4_is_loopback(uint32_t address)
+                                   ^
+modules/pico_ipv4.h:90:36: note: Function 'pico_ipv4_is_loopback' argument 1 names different: declaration 'addr' definition 'address'.
+int pico_ipv4_is_loopback(uint32_t addr);
+                                   ^
+modules/pico_ipv4.c:196:36: note: Function 'pico_ipv4_is_loopback' argument 1 names different: declaration 'addr' definition 'address'.
+int pico_ipv4_is_loopback(uint32_t address)
+                                   ^
+modules/pico_ipv4.c:210:37: style:inconclusive: Function 'pico_ipv4_is_valid_src' argument 1 names different: declaration 'addr' definition 'address'. [funcArgNamesDifferent]
+int pico_ipv4_is_valid_src(uint32_t address, struct pico_device *dev)
+                                    ^
+modules/pico_ipv4.h:91:37: note: Function 'pico_ipv4_is_valid_src' argument 1 names different: declaration 'addr' definition 'address'.
+int pico_ipv4_is_valid_src(uint32_t addr, struct pico_device *dev);
+                                    ^
+modules/pico_ipv4.c:210:37: note: Function 'pico_ipv4_is_valid_src' argument 1 names different: declaration 'addr' definition 'address'.
+int pico_ipv4_is_valid_src(uint32_t address, struct pico_device *dev)
+                                    ^
+modules/pico_ipv4.c:294:31: style: Variable 'hdr' is assigned a value that is never used. [unreadVariable]
+    struct pico_ipv4_hdr *hdr = (struct pico_ipv4_hdr *) f->net_hdr;
+                              ^
+modules/pico_ipv4.c:973:28: style: Unused variable: index [unusedVariable]
+    struct pico_tree_node *index;
+                           ^
+modules/pico_ipv4.c:1637:31: style: Variable 'hdr' is assigned a value that is never used. [unreadVariable]
+    struct pico_ipv4_hdr *hdr = (struct pico_ipv4_hdr *) f->net_hdr;
+                              ^
+modules/pico_ipv4.c:946:29: style: The scope of the variable 'r' can be reduced. [variableScope]
+    struct pico_ipv4_route *r;
+                            ^
+modules/pico_ipv6.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 20 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+modules/pico_ipv6.c:408:13: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        r = index->keyValue;
+            ^
+modules/pico_ipv6.c:400:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_ipv6.c:403:45: note: Assuming condition is false
+    if (!pico_ipv6_is_localhost(addr->addr) && (pico_ipv6_is_linklocal(addr->addr)  || pico_ipv6_is_sitelocal(addr->addr)))    {
+                                            ^
+modules/pico_ipv6.c:408:13: note: Null pointer dereference
+        r = index->keyValue;
+            ^
+modules/pico_ipv6.c:1390:32: warning: Either the condition 'dst' is redundant or there is possible null pointer dereference: dst. [nullPointerRedundantCheck]
+    if (pico_ipv6_is_localhost(dst->addr)) {
+                               ^
+modules/pico_ipv6.c:1375:9: note: Assuming that condition 'dst' is not redundant
+    if (dst && (pico_ipv6_is_linklocal(dst->addr) ||  pico_ipv6_is_multicast(dst->addr) || pico_ipv6_is_sitelocal(dst->addr))) {
+        ^
+modules/pico_ipv6.c:1390:32: note: Null pointer dereference
+    if (pico_ipv6_is_localhost(dst->addr)) {
+                               ^
+modules/pico_ipv6.c:1505:43: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        route = (struct pico_ipv6_route *)node->keyValue;
+                                          ^
+modules/pico_ipv6.c:1501:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_ipv6.c:1505:43: note: Null pointer dereference
+        route = (struct pico_ipv6_route *)node->keyValue;
+                                          ^
+modules/pico_ipv6.c:1532:40: warning:inconclusive: Possible null pointer dereference: i [nullPointer]
+        gw = (struct pico_ipv6_route *)i->keyValue;
+                                       ^
+modules/pico_ipv6.c:1525:32: note: Assignment 'i=NULL', assigned value is 0
+    struct pico_tree_node *i = NULL;
+                               ^
+modules/pico_ipv6.c:1532:40: note: Null pointer dereference
+        gw = (struct pico_ipv6_route *)i->keyValue;
+                                       ^
+modules/pico_ipv6.c:1650:17: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        route = index->keyValue;
+                ^
+modules/pico_ipv6.c:1643:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_ipv6.c:1645:9: note: Assuming condition is false
+    if (!address)
+        ^
+modules/pico_ipv6.c:1650:17: note: Null pointer dereference
+        route = index->keyValue;
+                ^
+modules/pico_ipv6.c:1860:17: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        route = index->keyValue;
+                ^
+modules/pico_ipv6.c:1855:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_ipv6.c:1860:17: note: Null pointer dereference
+        route = index->keyValue;
+                ^
+modules/pico_ipv6.c:1874:16: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        link = index->keyValue;
+               ^
+modules/pico_ipv6.c:1869:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_ipv6.c:1874:16: note: Null pointer dereference
+        link = index->keyValue;
+               ^
+modules/pico_ipv6.c:1997:16: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        link = index->keyValue;
+               ^
+modules/pico_ipv6.c:1992:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_ipv6.c:1997:16: note: Null pointer dereference
+        link = index->keyValue;
+               ^
+modules/pico_ipv6.c:2015:16: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        link = index->keyValue;
+               ^
+modules/pico_ipv6.c:2006:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_ipv6.c:2015:16: note: Null pointer dereference
+        link = index->keyValue;
+               ^
+modules/pico_ipv6.c:2032:16: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        link = index->keyValue;
+               ^
+modules/pico_ipv6.c:2029:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_ipv6.c:2032:16: note: Null pointer dereference
+        link = index->keyValue;
+               ^
+modules/pico_ipv6.c:2078:16: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        link = index->keyValue;
+               ^
+modules/pico_ipv6.c:2071:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *temp;
+                                   ^
+modules/pico_ipv6.c:2078:16: note: Null pointer dereference
+        link = index->keyValue;
+               ^
+modules/pico_ipv6.c:197:9: style: The scope of the variable 'i' can be reduced. [variableScope]
+    int i = 0, diff = 0, nibble = 0, hex = 0, colons = 0;
+        ^
+modules/pico_ipv6.c:198:20: style: The scope of the variable 'shift' can be reduced. [variableScope]
+    int zeros = 0, shift = 0;
+                   ^
+modules/pico_ipv6.c:613:22: style: The scope of the variable 'optlen' can be reduced. [variableScope]
+    uint8_t len = 0, optlen = 0;
+                     ^
+modules/pico_ipv6.c:842:30: style: The scope of the variable 'hbh' can be reduced. [variableScope]
+    struct pico_ipv6_exthdr *hbh;
+                             ^
+modules/pico_ipv6.c:165:17: style: Variable 'dec' is assigned a value that is never used. [unreadVariable]
+    uint8_t dec = 0, i = 0;
+                ^
+modules/pico_ipv6.c:197:21: style: Variable 'diff' is assigned a value that is never used. [unreadVariable]
+    int i = 0, diff = 0, nibble = 0, hex = 0, colons = 0;
+                    ^
+modules/pico_ipv6.c:613:29: style: Variable 'optlen' is assigned a value that is never used. [unreadVariable]
+    uint8_t len = 0, optlen = 0;
+                            ^
+modules/pico_ipv6.c:2132:31: style: Variable 'hdr' is assigned a value that is never used. [unreadVariable]
+    struct pico_ipv6_hdr *hdr = (struct pico_ipv6_hdr *)f->net_hdr;
+                              ^
+modules/pico_ipv6.c:1461:29: style: The scope of the variable 'r' can be reduced. [variableScope]
+    struct pico_ipv6_route *r;
+                            ^
+modules/pico_ipv6.c:1008:18: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        source = index->keyValue;
+                 ^
+modules/pico_ipv6.c:1004:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_ipv6.c:1008:18: note: Null pointer dereference
+        source = index->keyValue;
+                 ^
+modules/pico_ipv6.c:1118:26: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+                source = index->keyValue;
+                         ^
+modules/pico_ipv6.c:1097:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_ipv6.c:1118:26: note: Null pointer dereference
+                source = index->keyValue;
+                         ^
+modules/pico_ipv6.c:1156:16: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        link = index->keyValue;
+               ^
+modules/pico_ipv6.c:1145:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *index2 = NULL;
+                                   ^
+modules/pico_ipv6.c:1156:16: note: Null pointer dereference
+        link = index->keyValue;
+               ^
+modules/pico_ipv6.c:984:13: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        g = index->keyValue;
+            ^
+modules/pico_ipv6.c:974:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *index2 = NULL;
+                                   ^
+modules/pico_ipv6.c:984:13: note: Null pointer dereference
+        g = index->keyValue;
+            ^
+modules/pico_ipv6.c:988:22: warning:inconclusive: Possible null pointer dereference: index2 [nullPointer]
+            source = index2->keyValue;
+                     ^
+modules/pico_ipv6.c:974:52: note: Assignment 'index2=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *index2 = NULL;
+                                                   ^
+modules/pico_ipv6.c:988:22: note: Null pointer dereference
+            source = index2->keyValue;
+                     ^
+modules/pico_ipv6_nd.c:1432:13: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        n = index->keyValue;
+            ^
+modules/pico_ipv6_nd.c:1426:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_ipv6_nd.c:1432:13: note: Null pointer dereference
+        n = index->keyValue;
+            ^
+modules/pico_ipv6_nd.c:1459:14: warning:inconclusive: Possible null pointer dereference: rindex [nullPointer]
+        rt = rindex->keyValue;
+             ^
+modules/pico_ipv6_nd.c:1449:37: note: Assignment 'rindex=NULL', assigned value is 0
+    struct pico_tree_node *rindex = NULL;
+                                    ^
+modules/pico_ipv6_nd.c:1459:14: note: Null pointer dereference
+        rt = rindex->keyValue;
+             ^
+modules/pico_ipv6_nd.c:1462:23: warning:inconclusive: Possible null pointer dereference: devindex [nullPointer]
+                dev = devindex->keyValue;
+                      ^
+modules/pico_ipv6_nd.c:1448:39: note: Assignment 'devindex=NULL', assigned value is 0
+    struct pico_tree_node *devindex = NULL;
+                                      ^
+modules/pico_ipv6_nd.c:1462:23: note: Null pointer dereference
+                dev = devindex->keyValue;
+                      ^
+modules/pico_ipv6_nd.c:238:13: style: Redundant initialization for 'gateway'. The initialized value is overwritten before it is read. [redundantInitialization]
+    gateway = pico_ipv6_route_get_gateway(address);
+            ^
+modules/pico_ipv6_nd.c:235:29: note: gateway is initialized
+    struct pico_ip6 gateway = {{0}}, addr = {{0}};
+                            ^
+modules/pico_ipv6_nd.c:238:13: note: gateway is overwritten
+    gateway = pico_ipv6_route_get_gateway(address);
+            ^
+modules/pico_ipv6_nd.c:240:14: style: Redundant initialization for 'addr'. The initialized value is overwritten before it is read. [redundantInitialization]
+        addr = *address;
+             ^
+modules/pico_ipv6_nd.c:235:43: note: addr is initialized
+    struct pico_ip6 gateway = {{0}}, addr = {{0}};
+                                          ^
+modules/pico_ipv6_nd.c:240:14: note: addr is overwritten
+        addr = *address;
+             ^
+modules/pico_ipv6_nd.c:92:24: style: The scope of the variable 'f' can be reduced. [variableScope]
+    struct pico_frame *f;
+                       ^
+modules/pico_ipv6_nd.c:249:13: style: The scope of the variable 'type' can be reduced. [variableScope]
+    uint8_t type = 0;
+            ^
+modules/pico_ipv6_nd.c:1427:32: style: The scope of the variable 'n' can be reduced. [variableScope]
+    struct pico_ipv6_neighbor *n;
+                               ^
+modules/pico_ipv6_nd.c:249:18: style: Variable 'type' is assigned a value that is never used. [unreadVariable]
+    uint8_t type = 0;
+                 ^
+modules/pico_ipv6_nd.c:816:55: warning: Either the condition 'dev' is redundant or there is possible null pointer dereference: dev. [nullPointerRedundantCheck]
+    addr.pan.addr._ext = ((struct pico_6lowpan_info *)dev->eth)->addr_ext;
+                                                      ^
+modules/pico_ipv6_nd.c:819:9: note: Assuming that condition 'dev' is not redundant
+    if (dev && pico_6lowpan_lls[dev->mode].addr_cmp) {
+        ^
+modules/pico_ipv6_nd.c:816:55: note: Null pointer dereference
+    addr.pan.addr._ext = ((struct pico_6lowpan_info *)dev->eth)->addr_ext;
+                                                      ^
+modules/pico_ipv6_nd.c:1038:12: style: The scope of the variable 'len' can be reduced. [variableScope]
+    size_t len = 0;
+           ^
+modules/pico_ipv6_nd.c:1038:16: style: Variable 'len' is assigned a value that is never used. [unreadVariable]
+    size_t len = 0;
+               ^
+modules/pico_mcast.c:61:40: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        pico_tree_delete(mcast->allow, index->keyValue);
+                                       ^
+modules/pico_mcast.c:57:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_mcast.c:61:40: note: Null pointer dereference
+        pico_tree_delete(mcast->allow, index->keyValue);
+                                       ^
+modules/pico_mcast.c:65:40: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        pico_tree_delete(mcast->block, index->keyValue);
+                                       ^
+modules/pico_mcast.c:57:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_mcast.c:65:40: note: Null pointer dereference
+        pico_tree_delete(mcast->block, index->keyValue);
+                                       ^
+modules/pico_mcast.c:80:52: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+                if (pico_tree_insert(mcast->allow, index->keyValue) == &LEAF) {
+                                                   ^
+modules/pico_mcast.c:70:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_mcast.c:80:52: note: Null pointer dereference
+                if (pico_tree_insert(mcast->allow, index->keyValue) == &LEAF) {
+                                                   ^
+modules/pico_mcast.c:101:44: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        if (pico_tree_insert(mcast->allow, index->keyValue) == &LEAF) {
+                                           ^
+modules/pico_mcast.c:70:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_mcast.c:73:25: note: Assuming condition is false
+    if (mcast->p->event == MCAST_EVENT_DELETE_GROUP) {
+                        ^
+modules/pico_mcast.c:101:44: note: Null pointer dereference
+        if (pico_tree_insert(mcast->allow, index->keyValue) == &LEAF) {
+                                           ^
+modules/pico_mcast.c:152:44: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        if (pico_tree_insert(mcast->block, index->keyValue) == &LEAF) {
+                                           ^
+modules/pico_mcast.c:147:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_mcast.c:152:44: note: Null pointer dereference
+        if (pico_tree_insert(mcast->block, index->keyValue) == &LEAF) {
+                                           ^
+modules/pico_mcast.c:168:48: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            if (pico_tree_insert(mcast->allow, index->keyValue) == &LEAF) {
+                                               ^
+modules/pico_mcast.c:162:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_mcast.c:168:48: note: Null pointer dereference
+            if (pico_tree_insert(mcast->allow, index->keyValue) == &LEAF) {
+                                               ^
+modules/pico_mcast.c:186:44: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        if (pico_tree_insert(mcast->block, index->keyValue) == &LEAF) {
+                                           ^
+modules/pico_mcast.c:180:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_mcast.c:186:44: note: Null pointer dereference
+        if (pico_tree_insert(mcast->block, index->keyValue) == &LEAF) {
+                                           ^
+modules/pico_mcast.c:195:50: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        source = pico_tree_findKey(mcast->block, index->keyValue); /* B */
+                                                 ^
+modules/pico_mcast.c:180:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_mcast.c:186:61: note: Assuming condition is false
+        if (pico_tree_insert(mcast->block, index->keyValue) == &LEAF) {
+                                                            ^
+modules/pico_mcast.c:195:50: note: Null pointer dereference
+        source = pico_tree_findKey(mcast->block, index->keyValue); /* B */
+                                                 ^
+modules/pico_mdns.c:1418:17: style: Condition '!claim_id' is always true [knownConditionTrueFalse]
+            if (!claim_id) {
+                ^
+modules/pico_mdns.c:1413:24: note: Assignment 'claim_id=0', assigned value is 0
+    uint8_t claim_id = 0;
+                       ^
+modules/pico_mdns.c:1418:17: note: Condition '!claim_id' is always true
+            if (!claim_id) {
+                ^
+modules/pico_mdns.c:535:18: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:524:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:528:15: note: Assuming condition is false
+    if (!name || !tree) {
+              ^
+modules/pico_mdns.c:535:18: note: Null pointer dereference
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:594:18: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:578:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:584:15: note: Assuming condition is false
+    if (!name || !tree) {
+              ^
+modules/pico_mdns.c:594:18: note: Null pointer dereference
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:635:18: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:624:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL, *safe = NULL;
+                                  ^
+modules/pico_mdns.c:628:15: note: Assuming condition is false
+    if (!name || !tree) {
+              ^
+modules/pico_mdns.c:635:18: note: Null pointer dereference
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:686:18: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:660:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL, *next = NULL;
+                                  ^
+modules/pico_mdns.c:676:15: note: Assuming condition is false
+    if (!name || !tree) {
+              ^
+modules/pico_mdns.c:686:18: note: Null pointer dereference
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:761:18: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:753:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL, *next = NULL;
+                                  ^
+modules/pico_mdns.c:757:33: note: Assuming condition is false
+    if (pico_mdns_rtree_del_name(&MyRecords, conflict_name))
+                                ^
+modules/pico_mdns.c:761:18: note: Null pointer dereference
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:1195:48: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        question = (struct pico_dns_question *)node->keyValue;
+                                               ^
+modules/pico_mdns.c:1166:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:1176:29: note: Assuming condition is false
+    if ((!cookie) || !rname || (cookie->type != PICO_MDNS_PACKET_TYPE_PROBE)) {
+                            ^
+modules/pico_mdns.c:1195:48: note: Null pointer dereference
+        question = (struct pico_dns_question *)node->keyValue;
+                                               ^
+modules/pico_mdns.c:1244:23: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((cookie = node->keyValue) &&
+                      ^
+modules/pico_mdns.c:1234:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:1237:9: note: Assuming condition is false
+    if (!name) {
+        ^
+modules/pico_mdns.c:1244:23: note: Null pointer dereference
+        if ((cookie = node->keyValue) &&
+                      ^
+modules/pico_mdns.c:1280:18: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:1270:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:1280:18: note: Null pointer dereference
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:1317:18: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:1312:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:1317:18: note: Null pointer dereference
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:1345:18: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:1341:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:1345:18: note: Null pointer dereference
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:1377:18: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:1372:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:1377:18: note: Null pointer dereference
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:1417:23: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((record = node->keyValue)) {
+                      ^
+modules/pico_mdns.c:1412:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:1417:23: note: Null pointer dereference
+        if ((record = node->keyValue)) {
+                      ^
+modules/pico_mdns.c:1454:23: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((record = node->keyValue)) {
+                      ^
+modules/pico_mdns.c:1450:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:1454:23: note: Null pointer dereference
+        if ((record = node->keyValue)) {
+                      ^
+modules/pico_mdns.c:1643:23: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((record = node->keyValue)) {
+                      ^
+modules/pico_mdns.c:1633:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL, *next = NULL;
+                                  ^
+modules/pico_mdns.c:1643:23: note: Null pointer dereference
+        if ((record = node->keyValue)) {
+                      ^
+modules/pico_mdns.c:1680:23: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((cookie = node->keyValue) && --(cookie->timeout) == 0) {
+                      ^
+modules/pico_mdns.c:1676:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL, *next = NULL;
+                                  ^
+modules/pico_mdns.c:1680:23: note: Null pointer dereference
+        if ((cookie = node->keyValue) && --(cookie->timeout) == 0) {
+                      ^
+modules/pico_mdns.c:1895:13: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if (node->keyValue) {
+            ^
+modules/pico_mdns.c:1885:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:1888:15: note: Assuming condition is false
+    if (!dest || !src) {
+              ^
+modules/pico_mdns.c:1895:13: note: Null pointer dereference
+        if (node->keyValue) {
+            ^
+modules/pico_mdns.c:1930:23: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((record = node->keyValue) && !IS_RECORD_VERIFIED(record)) {
+                      ^
+modules/pico_mdns.c:1919:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL, *next;
+                                  ^
+modules/pico_mdns.c:1930:23: note: Null pointer dereference
+        if ((record = node->keyValue) && !IS_RECORD_VERIFIED(record)) {
+                      ^
+modules/pico_mdns.c:2251:18: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:2242:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:2245:35: note: Assuming condition is false
+    if (!answers || !unicast_tree || !multicast_tree) {
+                                  ^
+modules/pico_mdns.c:2251:18: note: Null pointer dereference
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:2252:23: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((record = node->keyValue)) {
+                      ^
+modules/pico_mdns.c:2242:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:2245:35: note: Assuming condition is false
+    if (!answers || !unicast_tree || !multicast_tree) {
+                                  ^
+modules/pico_mdns.c:2252:23: note: Null pointer dereference
+        if ((record = node->keyValue)) {
+                      ^
+modules/pico_mdns.c:2282:23: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((record = node->keyValue)) {
+                      ^
+modules/pico_mdns.c:2277:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL, *next = NULL;
+                                  ^
+modules/pico_mdns.c:2282:23: note: Null pointer dereference
+        if ((record = node->keyValue)) {
+                      ^
+modules/pico_mdns.c:2302:23: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((record = node->keyValue)) {
+                      ^
+modules/pico_mdns.c:2297:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:2302:23: note: Null pointer dereference
+        if ((record = node->keyValue)) {
+                      ^
+modules/pico_mdns.c:2428:18: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:2424:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:2428:18: note: Null pointer dereference
+        record = node->keyValue;
+                 ^
+modules/pico_mdns.c:2559:27: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+            if ((record = node->keyValue) &&
+                          ^
+modules/pico_mdns.c:2548:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:2559:27: note: Null pointer dereference
+            if ((record = node->keyValue) &&
+                          ^
+modules/pico_mdns.c:2567:27: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+            if ((record = node->keyValue) && IS_UNIQUE_RECORD(record) &&
+                          ^
+modules/pico_mdns.c:2548:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:2560:79: note: Assuming condition is false
+                short_be(record->record->rsuffix->rtype) == PICO_DNS_TYPE_SRV &&
+                                                                              ^
+modules/pico_mdns.c:2567:27: note: Null pointer dereference
+            if ((record = node->keyValue) && IS_UNIQUE_RECORD(record) &&
+                          ^
+modules/pico_mdns.c:3200:23: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((record = node->keyValue) && record->record) {
+                      ^
+modules/pico_mdns.c:3196:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:3200:23: note: Null pointer dereference
+        if ((record = node->keyValue) && record->record) {
+                      ^
+modules/pico_mdns.c:3369:27: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+            if ((record = node->keyValue)) {
+                          ^
+modules/pico_mdns.c:3351:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+modules/pico_mdns.c:3369:27: note: Null pointer dereference
+            if ((record = node->keyValue)) {
+                          ^
+modules/pico_mdns.c:2252:21: style: Variable 'record' is reassigned a value before the old one has been used. [redundantAssignment]
+        if ((record = node->keyValue)) {
+                    ^
+modules/pico_mdns.c:2251:16: note: record is assigned
+        record = node->keyValue;
+               ^
+modules/pico_mdns.c:2252:21: note: record is overwritten
+        if ((record = node->keyValue)) {
+                    ^
+modules/pico_mdns.c:190:43: style: The scope of the variable 'qb' can be reduced. [variableScope]
+    struct pico_dns_question *qa = NULL, *qb = 0;
+                                          ^
+modules/pico_mdns.c:193:9: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int ret = 0;
+        ^
+modules/pico_mdns.c:359:10: style: The scope of the variable 'c' can be reduced. [variableScope]
+    char c = 0;
+         ^
+modules/pico_mdns.c:385:10: style: The scope of the variable 'suffix' can be reduced. [variableScope]
+    char suffix[5] = {
+         ^
+modules/pico_mdns.c:392:13: style: The scope of the variable 'nslen' can be reduced. [variableScope]
+    uint8_t nslen = 0, slen = 0, ns = 0;
+            ^
+modules/pico_mdns.c:392:24: style: The scope of the variable 'slen' can be reduced. [variableScope]
+    uint8_t nslen = 0, slen = 0, ns = 0;
+                       ^
+modules/pico_mdns.c:964:14: style: The scope of the variable 'cl' can be reduced. [variableScope]
+    uint16_t cl = 0;
+             ^
+modules/pico_mdns.c:1573:14: style: The scope of the variable 'rttl' can be reduced. [variableScope]
+    uint32_t rttl = 0;
+             ^
+modules/pico_mdns.c:1963:14: style: The scope of the variable 'qtype' can be reduced. [variableScope]
+    uint16_t qtype = 0, qclass = 0;
+             ^
+modules/pico_mdns.c:1963:25: style: The scope of the variable 'qclass' can be reduced. [variableScope]
+    uint16_t qtype = 0, qclass = 0;
+                        ^
+modules/pico_mdns.c:2474:14: style: The scope of the variable 'ttl' can be reduced. [variableScope]
+    uint32_t ttl = 0;
+             ^
+modules/pico_mdns.c:2550:9: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int ret = 0;
+        ^
+modules/pico_mdns.c:2877:9: style: The scope of the variable 'pico_read' can be reduced. [variableScope]
+    int pico_read = 0;
+        ^
+modules/pico_mdns.c:3464:34: style:inconclusive: Function 'pico_mdns_claim' argument 1 names different: declaration 'record_tree' definition 'rtree'. [funcArgNamesDifferent]
+pico_mdns_claim( pico_mdns_rtree rtree,
+                                 ^
+modules/pico_mdns.h:150:34: note: Function 'pico_mdns_claim' argument 1 names different: declaration 'record_tree' definition 'rtree'.
+pico_mdns_claim( pico_mdns_rtree record_tree,
+                                 ^
+modules/pico_mdns.c:3464:34: note: Function 'pico_mdns_claim' argument 1 names different: declaration 'record_tree' definition 'rtree'.
+pico_mdns_claim( pico_mdns_rtree rtree,
+                                 ^
+modules/pico_mdns.c:3482:36: style:inconclusive: Function 'pico_mdns_reclaim' argument 1 names different: declaration 'record_tree' definition 'rtree'. [funcArgNamesDifferent]
+pico_mdns_reclaim( pico_mdns_rtree rtree,
+                                   ^
+modules/pico_mdns.c:263:36: note: Function 'pico_mdns_reclaim' argument 1 names different: declaration 'record_tree' definition 'rtree'.
+pico_mdns_reclaim( pico_mdns_rtree record_tree,
+                                   ^
+modules/pico_mdns.c:3482:36: note: Function 'pico_mdns_reclaim' argument 1 names different: declaration 'record_tree' definition 'rtree'.
+pico_mdns_reclaim( pico_mdns_rtree rtree,
+                                   ^
+modules/pico_mdns.c:190:46: style: Variable 'qb' is assigned a value that is never used. [unreadVariable]
+    struct pico_dns_question *qa = NULL, *qb = 0;
+                                             ^
+modules/pico_mdns.c:193:13: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int ret = 0;
+            ^
+modules/pico_mdns.c:359:12: style: Variable 'c' is assigned a value that is never used. [unreadVariable]
+    char c = 0;
+           ^
+modules/pico_mdns.c:392:19: style: Variable 'nslen' is assigned a value that is never used. [unreadVariable]
+    uint8_t nslen = 0, slen = 0, ns = 0;
+                  ^
+modules/pico_mdns.c:392:29: style: Variable 'slen' is assigned a value that is never used. [unreadVariable]
+    uint8_t nslen = 0, slen = 0, ns = 0;
+                            ^
+modules/pico_mdns.c:964:17: style: Variable 'cl' is assigned a value that is never used. [unreadVariable]
+    uint16_t cl = 0;
+                ^
+modules/pico_mdns.c:1143:14: style: Variable 'qc' is assigned a value that is never used. [unreadVariable]
+    if (!(qc = pico_tree_count(&(cookie->qtree)))) {
+             ^
+modules/pico_mdns.c:1573:19: style: Variable 'rttl' is assigned a value that is never used. [unreadVariable]
+    uint32_t rttl = 0;
+                  ^
+modules/pico_mdns.c:1963:20: style: Variable 'qtype' is assigned a value that is never used. [unreadVariable]
+    uint16_t qtype = 0, qclass = 0;
+                   ^
+modules/pico_mdns.c:1963:32: style: Variable 'qclass' is assigned a value that is never used. [unreadVariable]
+    uint16_t qtype = 0, qclass = 0;
+                               ^
+modules/pico_mdns.c:2474:18: style: Variable 'ttl' is assigned a value that is never used. [unreadVariable]
+    uint32_t ttl = 0;
+                 ^
+modules/pico_mdns.c:2877:19: style: Variable 'pico_read' is assigned a value that is never used. [unreadVariable]
+    int pico_read = 0;
+                  ^
+modules/pico_mld.c:179:30: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        ((struct mld_timer *)index->keyValue)->stopped = MLD_TIMER_STOPPED;
+                             ^
+modules/pico_mld.c:168:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_mld.c:171:9: note: Assuming condition is false
+    if (!link)
+        ^
+modules/pico_mld.c:179:30: note: Null pointer dereference
+        ((struct mld_timer *)index->keyValue)->stopped = MLD_TIMER_STOPPED;
+                             ^
+modules/pico_mld.c:180:38: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        pico_tree_delete(&MLDTimers, index->keyValue);
+                                     ^
+modules/pico_mld.c:168:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_mld.c:171:9: note: Assuming condition is false
+    if (!link)
+        ^
+modules/pico_mld.c:180:38: note: Null pointer dereference
+        pico_tree_delete(&MLDTimers, index->keyValue);
+                                     ^
+modules/pico_mld.c:477:34: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            ((struct mld_timer *)index->keyValue)->stopped = MLD_TIMER_STOPPED;
+                                 ^
+modules/pico_mld.c:446:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_mld.c:455:9: note: Assuming condition is false
+    if (!link)
+        ^
+modules/pico_mld.c:477:34: note: Null pointer dereference
+            ((struct mld_timer *)index->keyValue)->stopped = MLD_TIMER_STOPPED;
+                                 ^
+modules/pico_mld.c:478:42: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            pico_tree_delete(&MLDTimers, index->keyValue);
+                                         ^
+modules/pico_mld.c:446:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_mld.c:455:9: note: Assuming condition is false
+    if (!link)
+        ^
+modules/pico_mld.c:478:42: note: Null pointer dereference
+            pico_tree_delete(&MLDTimers, index->keyValue);
+                                         ^
+modules/pico_mld.c:1129:18: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            _p = index->keyValue;
+                 ^
+modules/pico_mld.c:1120:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_mld.c:1129:18: note: Null pointer dereference
+            _p = index->keyValue;
+                 ^
+modules/pico_mld.c:579:17: style: Redundant initialization for 'mcast_group'. The initialized value is overwritten before it is read. [redundantInitialization]
+    mcast_group = mld_report->mcast_group;
+                ^
+modules/pico_mld.c:569:33: note: mcast_group is initialized
+    struct pico_ip6 mcast_group = {{
+                                ^
+modules/pico_mld.c:579:17: note: mcast_group is overwritten
+    mcast_group = mld_report->mcast_group;
+                ^
+modules/pico_mld.c:718:17: style: Redundant initialization for 'mcast_group'. The initialized value is overwritten before it is read. [redundantInitialization]
+    mcast_group = p->mcast_group.ip6;
+                ^
+modules/pico_mld.c:703:33: note: mcast_group is initialized
+    struct pico_ip6 mcast_group = {{
+                                ^
+modules/pico_mld.c:718:17: note: mcast_group is overwritten
+    mcast_group = p->mcast_group.ip6;
+                ^
+modules/pico_mld.c:841:12: style: The scope of the variable 'result' can be reduced. [variableScope]
+    int8_t result;
+           ^
+modules/pico_mm.c:1057:33: style: The statement 'if (slab_size_global!=slab_sizes[2]) slab_size_global=slab_sizes[2]' is logically equivalent to 'slab_size_global=slab_sizes[2]'. [duplicateConditionalAssign]
+            if(slab_size_global != slab_sizes[2])
+                                ^
+modules/pico_mm.c:1059:34: note: Assignment 'slab_size_global=slab_sizes[2]'
+                slab_size_global = slab_sizes[2];
+                                 ^
+modules/pico_mm.c:1057:33: note: Condition 'slab_size_global!=slab_sizes[2]' is redundant
+            if(slab_size_global != slab_sizes[2])
+                                ^
+modules/pico_mm.c:1075:33: style: The statement 'if (slab_size_global!=slab_sizes[1]) slab_size_global=slab_sizes[1]' is logically equivalent to 'slab_size_global=slab_sizes[1]'. [duplicateConditionalAssign]
+            if(slab_size_global != slab_sizes[1])
+                                ^
+modules/pico_mm.c:1077:34: note: Assignment 'slab_size_global=slab_sizes[1]'
+                slab_size_global = slab_sizes[1];
+                                 ^
+modules/pico_mm.c:1075:33: note: Condition 'slab_size_global!=slab_sizes[1]' is redundant
+            if(slab_size_global != slab_sizes[1])
+                                ^
+modules/pico_mm.c:1093:33: style: The statement 'if (slab_size_global!=slab_sizes[0]) slab_size_global=slab_sizes[0]' is logically equivalent to 'slab_size_global=slab_sizes[0]'. [duplicateConditionalAssign]
+            if(slab_size_global != slab_sizes[0])
+                                ^
+modules/pico_mm.c:1095:34: note: Assignment 'slab_size_global=slab_sizes[0]'
+                slab_size_global = slab_sizes[0];
+                                 ^
+modules/pico_mm.c:1093:33: note: Condition 'slab_size_global!=slab_sizes[0]' is redundant
+            if(slab_size_global != slab_sizes[0])
+                                ^
+modules/pico_mm.c:241:27: style: The scope of the variable 'tree_node' can be reduced. [variableScope]
+    struct pico_tree_node*tree_node;
+                          ^
+modules/pico_mm.c:352:27: style: The scope of the variable 'first_block' can be reduced. [variableScope]
+    struct pico_mem_block*first_block;
+                          ^
+modules/pico_mm.c:353:26: style: The scope of the variable 'page' can be reduced. [variableScope]
+    struct pico_mem_page*page;
+                         ^
+modules/pico_mm.c:354:13: style: The scope of the variable 'startofmanagerheap' can be reduced. [variableScope]
+    uint8_t*startofmanagerheap;
+            ^
+modules/pico_mm.c:468:27: style: The scope of the variable 'new_block' can be reduced. [variableScope]
+    struct pico_mem_block*new_block;
+                          ^
+modules/pico_mm.c:584:27: style: The scope of the variable 'new_block' can be reduced. [variableScope]
+    struct pico_mem_block*new_block;
+                          ^
+modules/pico_mm.c:784:10: style: The scope of the variable 'temp' can be reduced. [variableScope]
+    void*temp;
+         ^
+modules/pico_mm.c:861:27: style: The scope of the variable 'inserted_block' can be reduced. [variableScope]
+    struct pico_mem_block*inserted_block;
+                          ^
+modules/pico_mm.c:1126:10: style: The scope of the variable 'returnCandidate' can be reduced. [variableScope]
+    void*returnCandidate;
+         ^
+modules/pico_mm.c:1128:11: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    void *ret;
+          ^
+modules/pico_mm.c:1522:17: style: The scope of the variable 'byteptr' can be reduced. [variableScope]
+        uint8_t*byteptr;
+                ^
+modules/pico_mm.c:1523:31: style: The scope of the variable 'mem_block' can be reduced. [variableScope]
+        struct pico_mem_block*mem_block;
+                              ^
+modules/pico_mm.c:1560:27: style: The scope of the variable 'mem_block' can be reduced. [variableScope]
+    struct pico_mem_block*mem_block;
+                          ^
+modules/pico_mm.c:1561:13: style: The scope of the variable 'byteptr' can be reduced. [variableScope]
+    uint8_t*byteptr;
+            ^
+modules/pico_mm.c:1558:58: style:inconclusive: Function 'pico_mem_profile_collect_data' argument 1 names different: declaration 'profiling_page_struct' definition 'profiling_struct'. [funcArgNamesDifferent]
+void pico_mem_profile_collect_data(struct profiling_data*profiling_struct)
+                                                         ^
+modules/pico_mm.h:68:58: note: Function 'pico_mem_profile_collect_data' argument 1 names different: declaration 'profiling_page_struct' definition 'profiling_struct'.
+void pico_mem_profile_collect_data(struct profiling_data*profiling_page_struct);
+                                                         ^
+modules/pico_mm.c:1558:58: note: Function 'pico_mem_profile_collect_data' argument 1 names different: declaration 'profiling_page_struct' definition 'profiling_struct'.
+void pico_mem_profile_collect_data(struct profiling_data*profiling_struct)
+                                                         ^
+modules/pico_mm.c:1537:15: style: Variable 'pages' is assigned a value that is never used. [unreadVariable]
+        pages = (manager->used_size / PICO_MEM_PAGE_SIZE) - manager_pages - 1;
+              ^
+modules/pico_nat.c:140:13: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        t = index->keyValue;
+            ^
+modules/pico_nat.c:129:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_nat.c:140:13: note: Null pointer dereference
+        t = index->keyValue;
+            ^
+modules/pico_nat.c:343:13: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        t = index->keyValue;
+            ^
+modules/pico_nat.c:334:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+modules/pico_nat.c:343:13: note: Null pointer dereference
+        t = index->keyValue;
+            ^
+modules/pico_olsr.c:456:24: style: Condition 'lnk' is always true [knownConditionTrueFalse]
+            } else if (lnk) {
+                       ^
+modules/pico_olsr.c:451:17: note: Assuming condition '!lnk' is false
+            if (!lnk) break;
+                ^
+modules/pico_olsr.c:456:24: note: Condition 'lnk' is always true
+            } else if (lnk) {
+                       ^
+modules/pico_olsr.c:237:30: style: The scope of the variable 'found' can be reduced. [variableScope]
+    struct olsr_route_entry *found;
+                             ^
+modules/pico_olsr.c:579:21: style: The scope of the variable 'msg_tc' can be reduced. [variableScope]
+    struct olsrmsg *msg_tc, *msg_mid;
+                    ^
+modules/pico_olsr.c:580:14: style: The scope of the variable 'size' can be reduced. [variableScope]
+    uint32_t size = 0, r;
+             ^
+modules/pico_olsr.c:582:14: style: The scope of the variable 'dgram' can be reduced. [variableScope]
+    uint8_t *dgram;
+             ^
+modules/pico_olsr.c:583:26: style: The scope of the variable 'tc' can be reduced. [variableScope]
+    struct olsr_hmsg_tc *tc;
+                         ^
+modules/pico_olsr.c:648:21: style: The scope of the variable 'msg_hello' can be reduced. [variableScope]
+    struct olsrmsg *msg_hello;
+                    ^
+modules/pico_olsr.c:649:14: style: The scope of the variable 'size' can be reduced. [variableScope]
+    uint32_t size = 0, r;
+             ^
+modules/pico_olsr.c:651:14: style: The scope of the variable 'dgram' can be reduced. [variableScope]
+    uint8_t *dgram;
+             ^
+modules/pico_olsr.c:652:29: style: The scope of the variable 'hello' can be reduced. [variableScope]
+    struct olsr_hmsg_hello *hello;
+                            ^
+modules/pico_olsr.c:713:15: style: The scope of the variable 'address' can be reduced. [variableScope]
+    uint32_t *address;
+              ^
+modules/pico_olsr.c:714:30: style: The scope of the variable 'e' can be reduced. [variableScope]
+    struct olsr_route_entry *e;
+                             ^
+modules/pico_olsr.c:755:23: style: The scope of the variable 'li' can be reduced. [variableScope]
+    struct olsr_link *li;
+                      ^
+modules/pico_olsr.c:756:30: style: The scope of the variable 'e' can be reduced. [variableScope]
+    struct olsr_route_entry *e;
+                             ^
+modules/pico_olsr.c:812:30: style: The scope of the variable 'rt' can be reduced. [variableScope]
+    struct olsr_route_entry *rt;
+                             ^
+modules/pico_olsr.c:1013:9: style: The scope of the variable 'r' can be reduced. [variableScope]
+    int r = 0;
+        ^
+modules/pico_olsr.c:1136:14: style: The scope of the variable 'ipaddr' can be reduced. [variableScope]
+        char ipaddr[20];
+             ^
+modules/pico_olsr.c:324:28: style: Checking if unsigned expression 'sublist->time_left' is less than zero. [unsignedLessThanZero]
+    if (sublist->time_left <= 0) {
+                           ^
+modules/pico_olsr.c:485:31: style: Variable 'dst' is assigned a value that is never used. [unreadVariable]
+    struct olsr_neighbor *dst = (struct olsr_neighbor *) buf;
+                              ^
+modules/pico_olsr.c:580:19: style: Variable 'size' is assigned a value that is never used. [unreadVariable]
+    uint32_t size = 0, r;
+                  ^
+modules/pico_olsr.c:649:19: style: Variable 'size' is assigned a value that is never used. [unreadVariable]
+    uint32_t size = 0, r;
+                  ^
+modules/pico_olsr.c:926:28: style: Variable 'parsed' is assigned a value that is never used. [unreadVariable]
+                    parsed += short_be(msg->size);
+                           ^
+modules/pico_olsr.c:1013:11: style: Variable 'r' is assigned a value that is never used. [unreadVariable]
+    int r = 0;
+          ^
+modules/pico_posix.c:26:5: warning: Assignment of function parameter has no effect outside the function. Did you forget dereferencing it? [uselessAssignmentPtrArg]
+    mux = NULL;
+    ^
+modules/pico_posix.c:57:5: warning: Assignment of function parameter has no effect outside the function. Did you forget dereferencing it? [uselessAssignmentPtrArg]
+    sem = NULL;
+    ^
+modules/pico_sntp_client.c:522:22: style: Same expression on both sides of '&&' because 'retval4!=0' and 'retval6!=0' represent the same value. [knownConditionTrueFalse]
+    if (retval4 != 0 && retval6 != 0)
+                     ^
+modules/pico_sntp_client.c:504:20: note: 'retval4' is assigned value '-1' here.
+    int retval4 = -1, retval6 = -1;
+                   ^
+modules/pico_sntp_client.c:504:34: note: 'retval6' is assigned value '-1' here.
+    int retval4 = -1, retval6 = -1;
+                                 ^
+modules/pico_sntp_client.c:522:22: note: Same expression on both sides of '&&' because 'retval4!=0' and 'retval6!=0' represent the same value.
+    if (retval4 != 0 && retval6 != 0)
+                     ^
+modules/pico_sntp_client.c:157:11: style: The scope of the variable 'recvbuf' can be reduced. [variableScope]
+    char *recvbuf;
+          ^
+modules/pico_sntp_client.c:158:9: style: The scope of the variable 'read' can be reduced. [variableScope]
+    int read = 0;
+        ^
+modules/pico_sntp_client.c:300:16: style: Condition 'retval>=0' is always false [knownConditionTrueFalse]
+    if (retval >= 0) {
+               ^
+modules/pico_sntp_client.c:268:19: note: Assignment 'retval=-1', assigned value is -1
+    int retval = -1;
+                  ^
+modules/pico_sntp_client.c:270:8: note: Assuming condition is false
+    if(!ck) {
+       ^
+modules/pico_sntp_client.c:300:16: note: Condition 'retval>=0' is always false
+    if (retval >= 0) {
+               ^
+modules/pico_sntp_client.c:490:22: style: Same expression on both sides of '&&' because 'retval4!=0' and 'retval6!=0' represent the same value. [knownConditionTrueFalse]
+    if (retval4 != 0 && retval6 != 0)
+                     ^
+modules/pico_sntp_client.c:472:20: note: 'retval4' is assigned value '-1' here.
+    int retval4 = -1, retval6 = -1;
+                   ^
+modules/pico_sntp_client.c:472:34: note: 'retval6' is assigned value '-1' here.
+    int retval4 = -1, retval6 = -1;
+                                 ^
+modules/pico_sntp_client.c:490:22: note: Same expression on both sides of '&&' because 'retval4!=0' and 'retval6!=0' represent the same value.
+    if (retval4 != 0 && retval6 != 0)
+                     ^
+modules/pico_socket_tcp.c:105:6: error: syntax error: keyword 'while' is not allowed in global scope [syntaxError]
+void pico_socket_tcp_cleanup(struct pico_socket *sock)
+     ^
+modules/pico_socket_tcp.c:206:13: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        s = index->keyValue;
+            ^
+modules/pico_socket_tcp.c:201:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_socket_tcp.c:206:13: note: Null pointer dereference
+        s = index->keyValue;
+            ^
+modules/pico_socket_udp.c:192:28: style: Unused variable: _tmp [unusedVariable]
+    struct pico_tree_node *_tmp;
+                           ^
+modules/pico_socket_udp.c:71:24: style: The scope of the variable 'cpy' can be reduced. [variableScope]
+    struct pico_frame *cpy;
+                       ^
+modules/pico_socket_udp.c:198:13: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        s = index->keyValue;
+            ^
+modules/pico_socket_udp.c:191:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+modules/pico_socket_udp.c:198:13: note: Null pointer dereference
+        s = index->keyValue;
+            ^
+modules/pico_socket_udp.c:131:24: style: The scope of the variable 'cpy' can be reduced. [variableScope]
+    struct pico_frame *cpy;
+                       ^
+modules/pico_strings.c:23:9: style: The scope of the variable 'ch1' can be reduced. [variableScope]
+    int ch1;
+        ^
+modules/pico_strings.c:24:9: style: The scope of the variable 'ch2' can be reduced. [variableScope]
+    int ch2;
+        ^
+modules/pico_tcp.c:1975:26: style: Condition 'next_ts==0' is always true [knownConditionTrueFalse]
+            if ((next_ts == 0) || ((f->timestamp < next_ts) && (f->timestamp > 0))) {
+                         ^
+modules/pico_tcp.c:1970:17: note: Assuming that condition 'next_ts==0' is not redundant
+    if (next_ts == 0) {
+                ^
+modules/pico_tcp.c:1975:26: note: Condition 'next_ts==0' is always true
+            if ((next_ts == 0) || ((f->timestamp < next_ts) && (f->timestamp > 0))) {
+                         ^
+modules/pico_tcp.c:3165:19: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        void *f = index->keyValue;
+                  ^
+modules/pico_tcp.c:3161:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *index_safe = NULL;
+                                   ^
+modules/pico_tcp.c:3165:19: note: Null pointer dereference
+        void *f = index->keyValue;
+                  ^
+modules/pico_tcp.c:564:18: style: The scope of the variable 'len_off' can be reduced. [variableScope]
+        uint32_t len_off;
+                 ^
+modules/pico_tcp.c:798:14: style: The scope of the variable 'start' can be reduced. [variableScope]
+    uint32_t start, end;
+             ^
+modules/pico_tcp.c:798:21: style: The scope of the variable 'end' can be reduced. [variableScope]
+    uint32_t start, end;
+                    ^
+modules/pico_tcp.c:1152:31: style: The scope of the variable 'f' can be reduced. [variableScope]
+    struct tcp_input_segment *f;
+                              ^
+modules/pico_tcp.c:1153:13: style: The scope of the variable 'in_frame_off' can be reduced. [variableScope]
+    int32_t in_frame_off;
+            ^
+modules/pico_tcp.c:1154:14: style: The scope of the variable 'in_frame_len' can be reduced. [variableScope]
+    uint32_t in_frame_len;
+             ^
+modules/pico_tcp.c:1374:26: style: The scope of the variable 'hdr_rcv' can be reduced. [variableScope]
+    struct pico_tcp_hdr *hdr_rcv;
+                         ^
+modules/pico_tcp.c:1661:31: style: The scope of the variable 'nxt' can be reduced. [variableScope]
+    struct tcp_input_segment *nxt;
+                              ^
+modules/pico_tcp.c:1732:9: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int ret = 0;
+        ^
+modules/pico_tcp.c:2003:24: style: The scope of the variable 'cpy' can be reduced. [variableScope]
+    struct pico_frame *cpy;
+                       ^
+modules/pico_tcp.c:2930:13: style: The scope of the variable 'seq_diff' can be reduced. [variableScope]
+    int32_t seq_diff = 0;
+            ^
+modules/pico_tcp.c:3076:24: style: The scope of the variable 'f_new' can be reduced. [variableScope]
+    struct pico_frame *f_new;
+                       ^
+modules/pico_tcp.c:1444:43: style:inconclusive: Function 'pico_tcp_reply_rst' argument 1 names different: declaration 'f' definition 'fr'. [funcArgNamesDifferent]
+int pico_tcp_reply_rst(struct pico_frame *fr)
+                                          ^
+modules/pico_tcp.h:91:43: note: Function 'pico_tcp_reply_rst' argument 1 names different: declaration 'f' definition 'fr'.
+int pico_tcp_reply_rst(struct pico_frame *f);
+                                          ^
+modules/pico_tcp.c:1444:43: note: Function 'pico_tcp_reply_rst' argument 1 names different: declaration 'f' definition 'fr'.
+int pico_tcp_reply_rst(struct pico_frame *fr)
+                                          ^
+modules/pico_tcp.c:3127:66: style:inconclusive: Function 'pico_tcp_push' argument 2 names different: declaration 'data' definition 'f'. [funcArgNamesDifferent]
+int pico_tcp_push(struct pico_protocol *self, struct pico_frame *f)
+                                                                 ^
+modules/pico_tcp.c:539:66: note: Function 'pico_tcp_push' argument 2 names different: declaration 'data' definition 'f'.
+int pico_tcp_push(struct pico_protocol *self, struct pico_frame *data);
+                                                                 ^
+modules/pico_tcp.c:3127:66: note: Function 'pico_tcp_push' argument 2 names different: declaration 'data' definition 'f'.
+int pico_tcp_push(struct pico_protocol *self, struct pico_frame *f)
+                                                                 ^
+modules/pico_tcp.c:361:24: style: Variable 'seq_result' is assigned a value that is never used. [unreadVariable]
+    int32_t seq_result = 0;
+                       ^
+modules/pico_tcp.c:1616:18: style: Variable 'n' is assigned a value that is never used. [unreadVariable]
+                n++;
+                 ^
+modules/pico_tcp.c:1732:13: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int ret = 0;
+            ^
+modules/pico_tcp.c:2084:18: style: Variable 'rtt' is assigned a value that is never used. [unreadVariable]
+    uint32_t rtt = 0;
+                 ^
+modules/pico_tcp.c:2930:22: style: Variable 'seq_diff' is assigned a value that is never used. [unreadVariable]
+    int32_t seq_diff = 0;
+                     ^
+modules/pico_tcp.c:2045:13: style: Condition '!una_f' is always true [knownConditionTrueFalse]
+        if (!una_f) {
+            ^
+modules/pico_tcp.c:2031:32: note: Assignment 'una_f=NULL', assigned value is 0
+    struct pico_frame *una_f = NULL, *cur_f;
+                               ^
+modules/pico_tcp.c:2045:13: note: Condition '!una_f' is always true
+        if (!una_f) {
+            ^
+modules/pico_tcp.c:2030:29: style: The scope of the variable 'cur' can be reduced. [variableScope]
+    uint32_t una, nxt, ack, cur;
+                            ^
+modules/pico_tftp.c:350:9: style: Assignment of function parameter has no effect outside the function. [uselessAssignmentArg]
+        len = session->len;
+        ^
+modules/pico_tftp.c:161:11: style: The scope of the variable 'current_option' can be reduced. [variableScope]
+    char *current_option;
+          ^
+modules/pico_tftp.c:629:17: style: The scope of the variable 'wrong_address' can be reduced. [variableScope]
+    const char *wrong_address = "Wrong address";
+                ^
+modules/pico_tftp.c:630:17: style: The scope of the variable 'wrong_block' can be reduced. [variableScope]
+    const char *wrong_block = "Wrong packet number";
+                ^
+modules/pico_tftp.c:795:9: style: The scope of the variable 'factor' can be reduced. [variableScope]
+    int factor;
+        ^
+modules/pico_tftp.c:350:13: style: Variable 'len' is assigned a value that is never used. [unreadVariable]
+        len = session->len;
+            ^
+stack/pico_device.c:317:24: style: The scope of the variable 'f' can be reduced. [variableScope]
+    struct pico_frame *f;
+                       ^
+stack/pico_device.c:344:24: style: The scope of the variable 'f' can be reduced. [variableScope]
+    struct pico_frame *f;
+                       ^
+stack/pico_device.c:439:25: style: The scope of the variable 'dev' can be reduced. [variableScope]
+    struct pico_device *dev;
+                        ^
+stack/pico_device.c:166:18: style: Variable 'len' is assigned a value that is never used. [unreadVariable]
+    uint32_t len = (uint32_t)strlen(dev->name);
+                 ^
+stack/pico_protocol.c:54:24: style: The scope of the variable 'f' can be reduced. [variableScope]
+    struct pico_frame *f;
+                       ^
+stack/pico_protocol.c:69:24: style: The scope of the variable 'f' can be reduced. [variableScope]
+    struct pico_frame *f;
+                       ^
+stack/pico_socket.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 22 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+stack/pico_socket.c:1993:10: style: Condition 'hdr' is always true [knownConditionTrueFalse]
+    if ((hdr) && (pico_socket_deliver(self, f, hdr->dport) == 0))
+         ^
+stack/pico_socket.c:1982:9: note: Assuming that condition '!hdr' is not redundant
+    if (!hdr) {
+        ^
+stack/pico_socket.c:1993:10: note: Condition 'hdr' is always true
+    if ((hdr) && (pico_socket_deliver(self, f, hdr->dport) == 0))
+         ^
+stack/pico_socket.c:371:39: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            if(((struct pico_socket *)index->keyValue)->remote_port == remote)
+                                      ^
+stack/pico_socket.c:363:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+stack/pico_socket.c:371:39: note: Null pointer dereference
+            if(((struct pico_socket *)index->keyValue)->remote_port == remote)
+                                      ^
+stack/pico_socket.c:2091:17: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            s = index->keyValue;
+                ^
+stack/pico_socket.c:2089:40: note: Assignment 'index=NULL', assigned value is 0
+        struct pico_tree_node *index = NULL, *safe_index = NULL;
+                                       ^
+stack/pico_socket.c:2091:17: note: Null pointer dereference
+            s = index->keyValue;
+                ^
+stack/pico_socket.c:804:35: style: Same expression on both sides of '||'. [duplicateExpression]
+        (proto == PICO_PROTO_UDP) ||
+                                  ^
+stack/pico_socket.c:341:25: style: The scope of the variable 'found' can be reduced. [variableScope]
+    struct pico_socket *found;
+                        ^
+stack/pico_socket.c:1164:16: style: Variable 'retval' is assigned a value that is never used. [unreadVariable]
+    int retval = 0;
+               ^
+stack/pico_socket_multicast.c:239:63: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            source = pico_tree_findKey(&listen->MCASTSources, index->keyValue);
+                                                              ^
+stack/pico_socket_multicast.c:234:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+stack/pico_socket_multicast.c:239:63: note: Null pointer dereference
+            source = pico_tree_findKey(&listen->MCASTSources, index->keyValue);
+                                                              ^
+stack/pico_socket_multicast.c:269:54: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            source = pico_tree_findKey(&MCASTFilter, index->keyValue);
+                                                     ^
+stack/pico_socket_multicast.c:264:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+stack/pico_socket_multicast.c:269:54: note: Null pointer dereference
+            source = pico_tree_findKey(&MCASTFilter, index->keyValue);
+                                                     ^
+stack/pico_socket_multicast.c:298:63: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            source = pico_tree_findKey(&listen->MCASTSources, index->keyValue);
+                                                              ^
+stack/pico_socket_multicast.c:293:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+stack/pico_socket_multicast.c:298:63: note: Null pointer dereference
+            source = pico_tree_findKey(&listen->MCASTSources, index->keyValue);
+                                                              ^
+stack/pico_socket_multicast.c:359:22: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            source = index->keyValue;
+                     ^
+stack/pico_socket_multicast.c:353:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+stack/pico_socket_multicast.c:359:22: note: Null pointer dereference
+            source = index->keyValue;
+                     ^
+stack/pico_socket_multicast.c:424:44: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            pico_tree_delete(&MCASTFilter, index->keyValue);
+                                           ^
+stack/pico_socket_multicast.c:418:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+stack/pico_socket_multicast.c:424:44: note: Null pointer dereference
+            pico_tree_delete(&MCASTFilter, index->keyValue);
+                                           ^
+stack/pico_socket_multicast.c:440:22: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        mcast_sock = index->keyValue;
+                     ^
+stack/pico_socket_multicast.c:418:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL;
+                                   ^
+stack/pico_socket_multicast.c:440:22: note: Null pointer dereference
+        mcast_sock = index->keyValue;
+                     ^
+stack/pico_socket_multicast.c:467:57: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            if (src->ip4.addr == ((union pico_address *)index->keyValue)->ip4.addr) {
+                                                        ^
+stack/pico_socket_multicast.c:460:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+stack/pico_socket_multicast.c:467:57: note: Null pointer dereference
+            if (src->ip4.addr == ((union pico_address *)index->keyValue)->ip4.addr) {
+                                                        ^
+stack/pico_socket_multicast.c:504:57: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            if (src->ip4.addr == ((union pico_address *)index->keyValue)->ip4.addr) {
+                                                        ^
+stack/pico_socket_multicast.c:497:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+stack/pico_socket_multicast.c:504:57: note: Null pointer dereference
+            if (src->ip4.addr == ((union pico_address *)index->keyValue)->ip4.addr) {
+                                                        ^
+stack/pico_socket_multicast.c:853:22: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+            listen = index->keyValue;
+                     ^
+stack/pico_socket_multicast.c:843:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL, *index2 = NULL, *_tmp2 = NULL;
+                                   ^
+stack/pico_socket_multicast.c:853:22: note: Null pointer dereference
+            listen = index->keyValue;
+                     ^
+stack/pico_socket_multicast.c:859:30: warning:inconclusive: Possible null pointer dereference: index2 [nullPointer]
+                    source = index2->keyValue;
+                             ^
+stack/pico_socket_multicast.c:843:66: note: Assignment 'index2=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL, *_tmp = NULL, *index2 = NULL, *_tmp2 = NULL;
+                                                                 ^
+stack/pico_socket_multicast.c:859:30: note: Null pointer dereference
+                    source = index2->keyValue;
+                             ^
+stack/pico_socket_multicast.c:1351:9: style: struct member 'pico_setsockopt_mcast_call::option' is never used. [unusedStructMember]
+    int option;
+        ^
+stack/pico_socket_multicast.c:1062:5: style:inconclusive: Consecutive return, break, continue, goto or throw statements are unnecessary. [duplicateBreak]
+    return -1;
+    ^
+stack/pico_socket_multicast.c:1119:5: style:inconclusive: Consecutive return, break, continue, goto or throw statements are unnecessary. [duplicateBreak]
+    return -1;
+    ^
+stack/pico_socket_multicast.c:1190:5: style:inconclusive: Consecutive return, break, continue, goto or throw statements are unnecessary. [duplicateBreak]
+    return -1;
+    ^
+stack/pico_socket_multicast.c:1287:5: style:inconclusive: Consecutive return, break, continue, goto or throw statements are unnecessary. [duplicateBreak]
+    return -1;
+    ^
+stack/pico_socket_multicast.c:1345:5: style:inconclusive: Consecutive return, break, continue, goto or throw statements are unnecessary. [duplicateBreak]
+    return -1;
+    ^
+stack/pico_stack.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 18 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+stack/pico_stack.c:346:5: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+    if (0) {
+    ^
+stack/pico_stack.c:371:5: note: Found duplicate branches for 'if' and 'else'.
+    else return 0;
+    ^
+stack/pico_stack.c:346:5: note: Found duplicate branches for 'if' and 'else'.
+    if (0) {
+    ^
+stack/pico_stack.c:595:24: style: The scope of the variable 't' can be reduced. [variableScope]
+    struct pico_timer *t;
+                       ^
+stack/pico_stack.c:616:28: style: The scope of the variable 'tref' can be reduced. [variableScope]
+    struct pico_timer_ref *tref;
+                           ^
+stack/pico_stack.c:637:28: style: The scope of the variable 'tref' can be reduced. [variableScope]
+    struct pico_timer_ref *tref;
+                           ^
+stack/pico_tree.c:364:45: style:inconclusive: Function 'rotateToRight' argument 1 names different: declaration 'root' definition 'tree'. [funcArgNamesDifferent]
+static void rotateToRight(struct pico_tree *tree, struct pico_tree_node *node)
+                                            ^
+stack/pico_tree.c:38:44: note: Function 'rotateToRight' argument 1 names different: declaration 'root' definition 'tree'.
+static void rotateToRight(struct pico_tree*root, struct pico_tree_node*node);
+                                           ^
+stack/pico_tree.c:364:45: note: Function 'rotateToRight' argument 1 names different: declaration 'root' definition 'tree'.
+static void rotateToRight(struct pico_tree *tree, struct pico_tree_node *node)
+                                            ^
+stack/pico_tree.c:135:16: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+    int result = 0;
+               ^
+test/examples/dhcp_client.c:73:13: warning: Identical inner 'if' condition is always true. [identicalInnerCondition]
+        if (nxt) {
+            ^
+test/examples/dhcp_client.c:72:12: note: outer condition: nxt
+    while (nxt) {
+           ^
+test/examples/dhcp_client.c:73:13: note: identical inner condition: nxt
+        if (nxt) {
+            ^
+test/examples/dhcp_client.c:85:71: warning: Either the condition 'dev==NULL' is redundant or there is possible null pointer dereference: dev. [nullPointerRedundantCheck]
+            printf("%s: error getting device %s: %s\n", __FUNCTION__, dev->name, strerror(pico_err));
+                                                                      ^
+test/examples/dhcp_client.c:81:16: note: Assuming that condition 'dev==NULL' is not redundant
+        if(dev == NULL) {
+               ^
+test/examples/dhcp_client.c:85:71: note: Null pointer dereference
+            printf("%s: error getting device %s: %s\n", __FUNCTION__, dev->name, strerror(pico_err));
+                                                                      ^
+test/examples/dhcp_client.c:38:29: style: Variable 'address' is assigned a value that is never used. [unreadVariable]
+    struct pico_ip4 address = ZERO_IP4, gateway = ZERO_IP4;
+                            ^
+test/examples/dhcp_client.c:38:49: style: Variable 'gateway' is assigned a value that is never used. [unreadVariable]
+    struct pico_ip4 address = ZERO_IP4, gateway = ZERO_IP4;
+                                                ^
+test/examples/dhcp_server.c:26:13: warning: Identical inner 'if' condition is always true. [identicalInnerCondition]
+        if (nxt) {
+            ^
+test/examples/dhcp_server.c:25:12: note: outer condition: nxt
+    while (nxt) {
+           ^
+test/examples/dhcp_server.c:26:13: note: identical inner condition: nxt
+        if (nxt) {
+            ^
+test/examples/dns_sd.c:93:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned long'. [invalidPrintfArgType_sint]
+    printf("Starting time: %d\n", starttime);
+    ^
+test/examples/dns_sd.c:73:9: style: Variable 'nxt' is assigned a value that is never used. [unreadVariable]
+    nxt = cpy_arg(&service_name, nxt);
+        ^
+test/examples/dnsclient.c:19:17: style: Variable 'id' is assigned a value that is never used. [unreadVariable]
+    uint8_t *id = (uint8_t *) arg;
+                ^
+test/examples/dnsclient.c:33:17: style: Variable 'id' is assigned a value that is never used. [unreadVariable]
+    uint8_t *id = (uint8_t *) arg;
+                ^
+test/examples/dnsclient.c:66:9: style: Variable 'nxt' is assigned a value that is never used. [unreadVariable]
+    nxt = cpy_arg(&ipver, nxt);
+        ^
+test/examples/dnsclient.c:52:40: style: Unused variable: getaddr6_id [unusedVariable]
+    uint8_t *getaddr_id, *getname_id, *getaddr6_id, *getname6_id;
+                                       ^
+test/examples/dnsclient.c:52:54: style: Unused variable: getname6_id [unusedVariable]
+    uint8_t *getaddr_id, *getname_id, *getaddr6_id, *getname6_id;
+                                                     ^
+test/examples/iperfc.c:111:24: style: Local variable 'inaddr_any' shadows outer variable [shadowVariable]
+    union pico_address inaddr_any = {
+                       ^
+test/examples/utils.h:16:24: note: Shadowed declaration
+extern struct pico_ip4 inaddr_any;
+                       ^
+test/examples/iperfc.c:111:24: note: Shadow variable
+    union pico_address inaddr_any = {
+                       ^
+test/examples/iperfc.c:12:13: style: struct member 'iperf_hdr::flags' is never used. [unusedStructMember]
+    int32_t flags;          /* 0 */
+            ^
+test/examples/iperfc.c:15:13: style: struct member 'iperf_hdr::bufferlen' is never used. [unusedStructMember]
+    int32_t bufferlen;      /* 0 */
+            ^
+test/examples/iperfc.c:16:13: style: struct member 'iperf_hdr::mWinBand' is never used. [unusedStructMember]
+    int32_t mWinBand;       /* 0 */
+            ^
+test/examples/iperfc.c:57:9: style: Unused variable: r [unusedVariable]
+    int r;
+        ^
+test/examples/iperfc.c:88:13: style: Variable 'yes' is assigned a value that is never used. [unreadVariable]
+    int yes = 1;
+            ^
+test/examples/iperfc.c:100:21: style: Unused variable: my_eth_addr [unusedVariable]
+    struct pico_ip4 my_eth_addr, netmask;
+                    ^
+test/examples/iperfc.c:100:34: style: Unused variable: netmask [unusedVariable]
+    struct pico_ip4 my_eth_addr, netmask;
+                                 ^
+test/examples/iperfc.c:101:25: style: Unused variable: pico_dev_eth [unusedVariable]
+    struct pico_device *pico_dev_eth;
+                        ^
+test/examples/mdns.c:64:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned long'. [invalidPrintfArgType_sint]
+    printf("Starting time: %d\n", starttime);
+    ^
+test/examples/mdns.c:44:9: style: Variable 'nxt' is assigned a value that is never used. [unreadVariable]
+    nxt = cpy_arg(&peername, nxt);
+        ^
+test/examples/multicast_ip6_recv.c:100:7: style: Variable 'p' is assigned a value that is never used. [unreadVariable]
+    p = strcat(p + strlen(sport), ",64,");
+      ^
+test/examples/multicast_ip6_send.c:87:32: warning: Either the condition 'maddr' is redundant or there is possible null pointer dereference: maddr. [nullPointerRedundantCheck]
+    new_arg = calloc(1, strlen(maddr) + 1 + strlen(sport) + 1 + strlen(lport) + strlen(",64,10,5,") + 1);
+                               ^
+test/examples/multicast_ip6_send.c:115:9: note: Assuming that condition 'maddr' is not redundant
+    if (maddr)
+        ^
+test/examples/multicast_ip6_send.c:87:32: note: Null pointer dereference
+    new_arg = calloc(1, strlen(maddr) + 1 + strlen(sport) + 1 + strlen(lport) + strlen(",64,10,5,") + 1);
+                               ^
+test/examples/multicast_ip6_send.c:87:52: warning: Either the condition 'sport' is redundant or there is possible null pointer dereference: sport. [nullPointerRedundantCheck]
+    new_arg = calloc(1, strlen(maddr) + 1 + strlen(sport) + 1 + strlen(lport) + strlen(",64,10,5,") + 1);
+                                                   ^
+test/examples/multicast_ip6_send.c:118:9: note: Assuming that condition 'sport' is not redundant
+    if (sport)
+        ^
+test/examples/multicast_ip6_send.c:87:52: note: Null pointer dereference
+    new_arg = calloc(1, strlen(maddr) + 1 + strlen(sport) + 1 + strlen(lport) + strlen(",64,10,5,") + 1);
+                                                   ^
+test/examples/multicast_ip6_send.c:87:72: warning: Either the condition 'lport' is redundant or there is possible null pointer dereference: lport. [nullPointerRedundantCheck]
+    new_arg = calloc(1, strlen(maddr) + 1 + strlen(sport) + 1 + strlen(lport) + strlen(",64,10,5,") + 1);
+                                                                       ^
+test/examples/multicast_ip6_send.c:112:9: note: Assuming that condition 'lport' is not redundant
+    if (lport)
+        ^
+test/examples/multicast_ip6_send.c:87:72: note: Null pointer dereference
+    new_arg = calloc(1, strlen(maddr) + 1 + strlen(sport) + 1 + strlen(lport) + strlen(",64,10,5,") + 1);
+                                                                       ^
+test/examples/multicast_ip6_send.c:88:16: warning: Either the condition 'new_arg' is redundant or there is possible null pointer dereference: new_arg. [nullPointerRedundantCheck]
+    p = strcat(new_arg, maddr);
+               ^
+test/examples/multicast_ip6_send.c:109:9: note: Assuming that condition 'new_arg' is not redundant
+    if (new_arg)
+        ^
+test/examples/multicast_ip6_send.c:88:16: note: Null pointer dereference
+    p = strcat(new_arg, maddr);
+               ^
+test/examples/multicast_ip6_send.c:88:25: warning: Either the condition 'maddr' is redundant or there is possible null pointer dereference: maddr. [nullPointerRedundantCheck]
+    p = strcat(new_arg, maddr);
+                        ^
+test/examples/multicast_ip6_send.c:115:9: note: Assuming that condition 'maddr' is not redundant
+    if (maddr)
+        ^
+test/examples/multicast_ip6_send.c:88:25: note: Null pointer dereference
+    p = strcat(new_arg, maddr);
+                        ^
+test/examples/multicast_ip6_send.c:89:27: warning: Either the condition 'maddr' is redundant or there is possible null pointer dereference: maddr. [nullPointerRedundantCheck]
+    p = strcat(p + strlen(maddr), ",");
+                          ^
+test/examples/multicast_ip6_send.c:115:9: note: Assuming that condition 'maddr' is not redundant
+    if (maddr)
+        ^
+test/examples/multicast_ip6_send.c:89:27: note: Null pointer dereference
+    p = strcat(p + strlen(maddr), ",");
+                          ^
+test/examples/multicast_ip6_send.c:90:23: warning: Either the condition 'sport' is redundant or there is possible null pointer dereference: sport. [nullPointerRedundantCheck]
+    p = strcat(p + 1, sport);
+                      ^
+test/examples/multicast_ip6_send.c:118:9: note: Assuming that condition 'sport' is not redundant
+    if (sport)
+        ^
+test/examples/multicast_ip6_send.c:90:23: note: Null pointer dereference
+    p = strcat(p + 1, sport);
+                      ^
+test/examples/multicast_ip6_send.c:91:27: warning: Either the condition 'sport' is redundant or there is possible null pointer dereference: sport. [nullPointerRedundantCheck]
+    p = strcat(p + strlen(sport), ",");
+                          ^
+test/examples/multicast_ip6_send.c:118:9: note: Assuming that condition 'sport' is not redundant
+    if (sport)
+        ^
+test/examples/multicast_ip6_send.c:91:27: note: Null pointer dereference
+    p = strcat(p + strlen(sport), ",");
+                          ^
+test/examples/multicast_ip6_send.c:92:23: warning: Either the condition 'lport' is redundant or there is possible null pointer dereference: lport. [nullPointerRedundantCheck]
+    p = strcat(p + 1, lport);
+                      ^
+test/examples/multicast_ip6_send.c:112:9: note: Assuming that condition 'lport' is not redundant
+    if (lport)
+        ^
+test/examples/multicast_ip6_send.c:92:23: note: Null pointer dereference
+    p = strcat(p + 1, lport);
+                      ^
+test/examples/multicast_ip6_send.c:93:27: warning: Either the condition 'lport' is redundant or there is possible null pointer dereference: lport. [nullPointerRedundantCheck]
+    p = strcat(p + strlen(lport), ",64,10,5,");
+                          ^
+test/examples/multicast_ip6_send.c:112:9: note: Assuming that condition 'lport' is not redundant
+    if (lport)
+        ^
+test/examples/multicast_ip6_send.c:93:27: note: Null pointer dereference
+    p = strcat(p + strlen(lport), ",64,10,5,");
+                          ^
+test/examples/multicast_ip6_send.c:93:7: style: Variable 'p' is assigned a value that is never used. [unreadVariable]
+    p = strcat(p + strlen(lport), ",64,10,5,");
+      ^
+test/examples/multicast_recv.c:96:7: style: Variable 'p' is assigned a value that is never used. [unreadVariable]
+    p = strcat(p + strlen(sport), ":64:");
+      ^
+test/examples/multicast_send.c:85:32: warning: Either the condition 'maddr' is redundant or there is possible null pointer dereference: maddr. [nullPointerRedundantCheck]
+    new_arg = calloc(1, strlen(maddr) + 1 + strlen(sport) + 1 + strlen(lport) + strlen(":64:10:5:") + 1);
+                               ^
+test/examples/multicast_send.c:104:9: note: Assuming that condition 'maddr' is not redundant
+    if (maddr)
+        ^
+test/examples/multicast_send.c:85:32: note: Null pointer dereference
+    new_arg = calloc(1, strlen(maddr) + 1 + strlen(sport) + 1 + strlen(lport) + strlen(":64:10:5:") + 1);
+                               ^
+test/examples/multicast_send.c:85:52: warning: Either the condition 'sport' is redundant or there is possible null pointer dereference: sport. [nullPointerRedundantCheck]
+    new_arg = calloc(1, strlen(maddr) + 1 + strlen(sport) + 1 + strlen(lport) + strlen(":64:10:5:") + 1);
+                                                   ^
+test/examples/multicast_send.c:113:9: note: Assuming that condition 'sport' is not redundant
+    if (sport)
+        ^
+test/examples/multicast_send.c:85:52: note: Null pointer dereference
+    new_arg = calloc(1, strlen(maddr) + 1 + strlen(sport) + 1 + strlen(lport) + strlen(":64:10:5:") + 1);
+                                                   ^
+test/examples/multicast_send.c:85:72: warning: Either the condition 'lport' is redundant or there is possible null pointer dereference: lport. [nullPointerRedundantCheck]
+    new_arg = calloc(1, strlen(maddr) + 1 + strlen(sport) + 1 + strlen(lport) + strlen(":64:10:5:") + 1);
+                                                                       ^
+test/examples/multicast_send.c:110:9: note: Assuming that condition 'lport' is not redundant
+    if (lport)
+        ^
+test/examples/multicast_send.c:85:72: note: Null pointer dereference
+    new_arg = calloc(1, strlen(maddr) + 1 + strlen(sport) + 1 + strlen(lport) + strlen(":64:10:5:") + 1);
+                                                                       ^
+test/examples/multicast_send.c:86:25: warning: Either the condition 'maddr' is redundant or there is possible null pointer dereference: maddr. [nullPointerRedundantCheck]
+    p = strcat(new_arg, maddr);
+                        ^
+test/examples/multicast_send.c:104:9: note: Assuming that condition 'maddr' is not redundant
+    if (maddr)
+        ^
+test/examples/multicast_send.c:86:25: note: Null pointer dereference
+    p = strcat(new_arg, maddr);
+                        ^
+test/examples/multicast_send.c:87:27: warning: Either the condition 'maddr' is redundant or there is possible null pointer dereference: maddr. [nullPointerRedundantCheck]
+    p = strcat(p + strlen(maddr), ":");
+                          ^
+test/examples/multicast_send.c:104:9: note: Assuming that condition 'maddr' is not redundant
+    if (maddr)
+        ^
+test/examples/multicast_send.c:87:27: note: Null pointer dereference
+    p = strcat(p + strlen(maddr), ":");
+                          ^
+test/examples/multicast_send.c:88:23: warning: Either the condition 'sport' is redundant or there is possible null pointer dereference: sport. [nullPointerRedundantCheck]
+    p = strcat(p + 1, sport);
+                      ^
+test/examples/multicast_send.c:113:9: note: Assuming that condition 'sport' is not redundant
+    if (sport)
+        ^
+test/examples/multicast_send.c:88:23: note: Null pointer dereference
+    p = strcat(p + 1, sport);
+                      ^
+test/examples/multicast_send.c:89:27: warning: Either the condition 'sport' is redundant or there is possible null pointer dereference: sport. [nullPointerRedundantCheck]
+    p = strcat(p + strlen(sport), ":");
+                          ^
+test/examples/multicast_send.c:113:9: note: Assuming that condition 'sport' is not redundant
+    if (sport)
+        ^
+test/examples/multicast_send.c:89:27: note: Null pointer dereference
+    p = strcat(p + strlen(sport), ":");
+                          ^
+test/examples/multicast_send.c:90:23: warning: Either the condition 'lport' is redundant or there is possible null pointer dereference: lport. [nullPointerRedundantCheck]
+    p = strcat(p + 1, lport);
+                      ^
+test/examples/multicast_send.c:110:9: note: Assuming that condition 'lport' is not redundant
+    if (lport)
+        ^
+test/examples/multicast_send.c:90:23: note: Null pointer dereference
+    p = strcat(p + 1, lport);
+                      ^
+test/examples/multicast_send.c:91:27: warning: Either the condition 'lport' is redundant or there is possible null pointer dereference: lport. [nullPointerRedundantCheck]
+    p = strcat(p + strlen(lport), ":64:10:5:");
+                          ^
+test/examples/multicast_send.c:110:9: note: Assuming that condition 'lport' is not redundant
+    if (lport)
+        ^
+test/examples/multicast_send.c:91:27: note: Null pointer dereference
+    p = strcat(p + strlen(lport), ":64:10:5:");
+                          ^
+test/examples/multicast_send.c:91:7: style: Variable 'p' is assigned a value that is never used. [unreadVariable]
+    p = strcat(p + strlen(lport), ":64:10:5:");
+      ^
+test/examples/ping.c:62:23: style: Variable 'initial_delay' is assigned a value that is never used. [unreadVariable]
+    int initial_delay = 0;
+                      ^
+test/examples/ping.c:97:14: style: Variable 'next' is assigned a value that is never used. [unreadVariable]
+        next = cpy_arg(&delay, next);
+             ^
+test/examples/slaacv4.c:56:13: warning: Identical inner 'if' condition is always true. [identicalInnerCondition]
+        if (nxt) {
+            ^
+test/examples/slaacv4.c:55:12: note: outer condition: nxt
+    while (nxt) {
+           ^
+test/examples/slaacv4.c:56:13: note: identical inner condition: nxt
+        if (nxt) {
+            ^
+test/examples/slaacv4.c:66:67: warning: Either the condition 'dev==NULL' is redundant or there is possible null pointer dereference: dev. [nullPointerRedundantCheck]
+        printf("%s: error getting device %s: %s\n", __FUNCTION__, dev->name, strerror(pico_err));
+                                                                  ^
+test/examples/slaacv4.c:65:12: note: Assuming that condition 'dev==NULL' is not redundant
+    if(dev == NULL) {
+           ^
+test/examples/slaacv4.c:66:67: note: Null pointer dereference
+        printf("%s: error getting device %s: %s\n", __FUNCTION__, dev->name, strerror(pico_err));
+                                                                  ^
+test/examples/slaacv4.c:28:18: style: Variable 'dst' is assigned a value that is never used. [unreadVariable]
+    char dst[16] = "169.254.22.5";
+                 ^
+test/examples/tcpbench.c:261:13: style: Condition 'sport' is always true [knownConditionTrueFalse]
+        if (sport) {
+            ^
+test/examples/tcpbench.c:256:13: note: Assuming that condition '!sport' is not redundant
+        if (!sport) {
+            ^
+test/examples/tcpbench.c:261:13: note: Condition 'sport' is always true
+        if (sport) {
+            ^
+test/examples/tcpbench.c:137:17: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+                printf("tcpbench> Transmitted %u bytes in %lf seconds\n", TCPSIZ, tcpbench_time);
+                ^
+test/examples/tcpbench.c:160:7: style: Local variable 'inaddr_any' shadows outer variable [shadowVariable]
+    } inaddr_any = {
+      ^
+test/examples/utils.h:16:24: note: Shadowed declaration
+extern struct pico_ip4 inaddr_any;
+                       ^
+test/examples/tcpbench.c:160:7: note: Shadow variable
+    } inaddr_any = {
+      ^
+test/examples/tcpbench.c:29:26: style: Variable 'tcpbench_time' is assigned a value that is never used. [unreadVariable]
+    double tcpbench_time = 0;
+                         ^
+test/examples/tcpbench.c:232:29: style: Unused variable: server_addr [unusedVariable]
+            struct pico_ip6 server_addr;
+                            ^
+test/examples/tcpclient.c:83:27: warning: Opposite inner 'if' condition leads to a dead code block. [oppositeInnerCondition]
+                    if (w < 0)
+                          ^
+test/examples/tcpclient.c:80:23: note: outer condition: w>0
+                if (w > 0) {
+                      ^
+test/examples/tcpclient.c:83:27: note: opposite inner condition: w<0
+                    if (w < 0)
+                          ^
+test/examples/tcpclient.c:111:24: style: Local variable 'inaddr_any' shadows outer variable [shadowVariable]
+    union pico_address inaddr_any = {
+                       ^
+test/examples/utils.h:16:24: note: Shadowed declaration
+extern struct pico_ip4 inaddr_any;
+                       ^
+test/examples/tcpclient.c:111:24: note: Shadow variable
+    union pico_address inaddr_any = {
+                       ^
+test/examples/tcpclient.c:92:13: style:inconclusive: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+            if (!closed) {
+            ^
+test/examples/tcpecho.c:12:9: style: The scope of the variable 'w' can be reduced. [variableScope]
+    int w, ww = 0;
+        ^
+test/examples/tcpecho.c:123:7: style: Local variable 'inaddr_any' shadows outer variable [shadowVariable]
+    } inaddr_any = {
+      ^
+test/examples/utils.h:16:24: note: Shadowed declaration
+extern struct pico_ip4 inaddr_any;
+                       ^
+test/examples/tcpecho.c:123:7: note: Shadow variable
+    } inaddr_any = {
+      ^
+test/examples/tcpecho.c:32:11: style: Variable 'r' is assigned a value that is never used. [unreadVariable]
+    int r = 0;
+          ^
+test/examples/tftp.c:158:9: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int ret;
+        ^
+test/examples/tftp.c:213:9: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int ret;
+        ^
+test/examples/tftp.c:431:34: style: The scope of the variable 'old_cmd' can be reduced. [variableScope]
+    struct command_t *commands, *old_cmd;
+                                 ^
+test/examples/tftp.c:177:9: style: Unused variable: ret [unusedVariable]
+    int ret;
+        ^
+test/examples/udp_client.c:256:98: warning: Either the condition 'daddr' is redundant or there is possible null pointer dereference: daddr. [nullPointerRedundantCheck]
+           __FUNCTION__, udpclient_pas->datasize, udpclient_pas->loops, udpclient_pas->subloops, daddr, short_be(udpclient_pas->sport));
+                                                                                                 ^
+test/examples/udp_client.c:265:9: note: Assuming that condition 'daddr' is not redundant
+    if (daddr)
+        ^
+test/examples/udp_client.c:256:98: note: Null pointer dereference
+           __FUNCTION__, udpclient_pas->datasize, udpclient_pas->loops, udpclient_pas->subloops, daddr, short_be(udpclient_pas->sport));
+                                                                                                 ^
+test/examples/udp_client.c:49:9: style: The scope of the variable 'i' can be reduced. [variableScope]
+    int i = 0, w = 0;
+        ^
+test/examples/udp_client.c:49:16: style: The scope of the variable 'w' can be reduced. [variableScope]
+    int i = 0, w = 0;
+               ^
+test/examples/udp_client.c:87:9: style: The scope of the variable 'r' can be reduced. [variableScope]
+    int r = 0;
+        ^
+test/examples/udp_client.c:49:11: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+    int i = 0, w = 0;
+          ^
+test/examples/udp_client.c:49:18: style: Variable 'w' is assigned a value that is never used. [unreadVariable]
+    int i = 0, w = 0;
+                 ^
+test/examples/udp_echo.c:26:9: style: The scope of the variable 'r' can be reduced. [variableScope]
+    int r = 0;
+        ^
+test/examples/udp_echo.c:178:13: style: Local variable 'ret' shadows outer variable [shadowVariable]
+        int ret = 0;
+            ^
+test/examples/udp_echo.c:76:9: note: Shadowed declaration
+    int ret = 0;
+        ^
+test/examples/udp_echo.c:178:13: note: Shadow variable
+        int ret = 0;
+            ^
+test/examples/udp_echo.c:179:22: style: Variable 'address.addr' is assigned a value that is never used. [unreadVariable]
+        address.addr = 0x0800280a;
+                     ^
+test/examples/udp_sendto_test.c:54:13: style: Variable 'nxt' is assigned a value that is never used. [unreadVariable]
+        nxt = cpy_arg(&dstport, nxt);
+            ^
+test/examples/udpnat.c:15:10: style: The scope of the variable 'end' can be reduced. [variableScope]
+    char end[4] = "end";
+         ^
+test/examples/udpnat.c:40:10: style: The scope of the variable 'recvbuf' can be reduced. [variableScope]
+    char recvbuf[1400];
+         ^
+test/examples/udpnat.c:41:9: style: The scope of the variable 'r' can be reduced. [variableScope]
+    int r = 0;
+        ^
+test/examples/udpnat.c:19:11: style: Variable 'w' is assigned a value that is never used. [unreadVariable]
+        w = pico_socket_send(s, buf, 1400);
+          ^
+test/examples/udpnat.c:110:13: style: Variable 'nxt' is assigned a value that is never used. [unreadVariable]
+        nxt = cpy_arg(&dport, nxt);
+            ^
+test/pico_faulty.h:56:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    snprintf(buffer, 20, "%d\n", max_mem);
+    ^
+test/picoapp.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+test/picoapp.c:122:9: warning: Assignment of function parameter has no effect outside the function. Did you forget dereferencing it? [uselessAssignmentPtrArg]
+        arg = NULL;
+        ^
+test/picoapp.c:647:17: style:inconclusive: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+                app_mcastsend(args);
+                ^
+test/picoapp.c:652:17: style:inconclusive: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+                app_mcastreceive(args);
+                ^
+test/picoapp.c:658:17: style:inconclusive: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+                app_mcastsend_ipv6(args);
+                ^
+test/picoapp.c:663:17: style:inconclusive: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+                app_mcastreceive_ipv6(args);
+                ^
+test/picoapp.c:514:19: style: The scope of the variable 'nxt' can be reduced. [variableScope]
+            char *nxt, *name = NULL, *sock = NULL;
+                  ^
+test/picoapp.c:580:19: style: The scope of the variable 'nxt' can be reduced. [variableScope]
+            char *nxt, *addr, *nm, *gw;
+                  ^
+test/unit/modunit_pico_6lowpan.c:1435:14: style: Variable 'next' is assigned a value that is never used. [unreadVariable]
+        next = cpy_arg(&delay, next);
+             ^
+test/unit/modunit_pico_dev_loop.c:18:9: warning: Redundant assignment of 'dev' to itself. [selfAssignment]
+    dev = dev;
+        ^
+test/unit/modunit_pico_dev_loop.c:18:9: style: Variable 'dev' is assigned a value that is never used. [unreadVariable]
+    dev = dev;
+        ^
+test/unit/modunit_pico_dev_ppp.c:78:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf(" First char : %02x, len: %d\n", serial_out_first_char, serial_out_len);
+    ^
+test/unit/modunit_pico_dev_ppp.c:794:7: style: Variable 'p' is reassigned a value before the old one has been used. [redundantAssignment]
+    p = req + sizeof(struct pico_ipcp_hdr);
+      ^
+test/unit/modunit_pico_dev_ppp.c:780:7: note: p is assigned
+    p += sizeof(uint32_t);
+      ^
+test/unit/modunit_pico_dev_ppp.c:794:7: note: p is overwritten
+    p = req + sizeof(struct pico_ipcp_hdr);
+      ^
+test/unit/modunit_pico_dns_common.c:761:21: style: The comparison 'ret == 0' is always true. [knownConditionTrueFalse]
+    fail_unless(ret == 0, "dns_question_vector_add returned error!\n");
+                    ^
+test/unit/modunit_pico_dns_common.c:752:15: note: 'ret' is assigned value '0' here.
+    int ret = 0;
+              ^
+test/unit/modunit_pico_dns_common.c:761:21: note: The comparison 'ret == 0' is always true.
+    fail_unless(ret == 0, "dns_question_vector_add returned error!\n");
+                    ^
+test/unit/modunit_pico_dns_common.c:765:21: style: The comparison 'ret == 0' is always true. [knownConditionTrueFalse]
+    fail_unless(ret == 0, "dns_question_vector_add returned error!\n");
+                    ^
+test/unit/modunit_pico_dns_common.c:752:15: note: 'ret' is assigned value '0' here.
+    int ret = 0;
+              ^
+test/unit/modunit_pico_dns_common.c:765:21: note: The comparison 'ret == 0' is always true.
+    fail_unless(ret == 0, "dns_question_vector_add returned error!\n");
+                    ^
+test/unit/modunit_pico_ethernet.c:266:9: style: Variable 'eth' is reassigned a value before the old one has been used. [redundantAssignment]
+    eth = (struct pico_eth_hdr *)f->datalink_hdr;
+        ^
+test/unit/modunit_pico_ethernet.c:254:9: note: eth is assigned
+    eth = (struct pico_eth_hdr *)f->datalink_hdr;
+        ^
+test/unit/modunit_pico_ethernet.c:266:9: note: eth is overwritten
+    eth = (struct pico_eth_hdr *)f->datalink_hdr;
+        ^
+test/unit/modunit_pico_frame.c:141:34: style: Variable 'c3' is not assigned a value. [unassignedVariable]
+    struct pico_frame *c1, *c2, *c3;
+                                 ^
+test/unit/modunit_pico_igmp.c:150:31: style: Variable 'link->mcast_compatibility' is reassigned a value before the old one has been used. [redundantAssignment]
+    link->mcast_compatibility = PICO_IGMPV3;
+                              ^
+test/unit/modunit_pico_igmp.c:145:31: note: link->mcast_compatibility is assigned
+    link->mcast_compatibility = PICO_IGMPV2;
+                              ^
+test/unit/modunit_pico_igmp.c:150:31: note: link->mcast_compatibility is overwritten
+    link->mcast_compatibility = PICO_IGMPV3;
+                              ^
+test/unit/modunit_pico_igmp.c:134:9: style: The scope of the variable 'result' can be reduced. [variableScope]
+    int result;
+        ^
+test/unit/modunit_pico_mdns.c:1085:23: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((record = node->keyValue)) {
+                      ^
+test/unit/modunit_pico_mdns.c:1073:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+test/unit/modunit_pico_mdns.c:1085:23: note: Null pointer dereference
+        if ((record = node->keyValue)) {
+                      ^
+test/unit/modunit_pico_mdns.c:1127:23: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((record = node->keyValue)) {
+                      ^
+test/unit/modunit_pico_mdns.c:1107:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+test/unit/modunit_pico_mdns.c:1127:23: note: Null pointer dereference
+        if ((record = node->keyValue)) {
+                      ^
+test/unit/modunit_pico_mdns.c:1681:23: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((record = node->keyValue)) {
+                      ^
+test/unit/modunit_pico_mdns.c:1660:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+test/unit/modunit_pico_mdns.c:1681:23: note: Null pointer dereference
+        if ((record = node->keyValue)) {
+                      ^
+test/unit/modunit_pico_mdns.c:1689:23: warning:inconclusive: Possible null pointer dereference: node [nullPointer]
+        if ((record = node->keyValue)) {
+                      ^
+test/unit/modunit_pico_mdns.c:1660:35: note: Assignment 'node=NULL', assigned value is 0
+    struct pico_tree_node *node = NULL;
+                                  ^
+test/unit/modunit_pico_mdns.c:1689:23: note: Null pointer dereference
+        if ((record = node->keyValue)) {
+                      ^
+test/unit/modunit_pico_mdns.c:1511:21: style: The comparison 'ret == 0' is always true. [knownConditionTrueFalse]
+    fail_unless(ret == 0, "dns_question_vector_add returned error!\n");
+                    ^
+test/unit/modunit_pico_mdns.c:1500:15: note: 'ret' is assigned value '0' here.
+    int ret = 0;
+              ^
+test/unit/modunit_pico_mdns.c:1511:21: note: The comparison 'ret == 0' is always true.
+    fail_unless(ret == 0, "dns_question_vector_add returned error!\n");
+                    ^
+test/unit/modunit_pico_mdns.c:863:9: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    ret = pico_mdns_record_resolve_conflict(record, url2);
+        ^
+test/unit/modunit_pico_mld.c:319:31: style: Variable 'link->mcast_compatibility' is reassigned a value before the old one has been used. [redundantAssignment]
+    link->mcast_compatibility = PICO_MLDV2;
+                              ^
+test/unit/modunit_pico_mld.c:314:31: note: link->mcast_compatibility is assigned
+    link->mcast_compatibility = PICO_MLDV1;
+                              ^
+test/unit/modunit_pico_mld.c:319:31: note: link->mcast_compatibility is overwritten
+    link->mcast_compatibility = PICO_MLDV2;
+                              ^
+test/unit/modunit_pico_mld.c:50:14: style: The scope of the variable 'p' can be reduced. [variableScope]
+    uint8_t *p;
+             ^
+test/unit/modunit_pico_mld.c:301:9: style: The scope of the variable 'result' can be reduced. [variableScope]
+    int result = 0;
+        ^
+test/unit/modunit_pico_mld.c:55:11: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+    int i = 0;
+          ^
+test/unit/modunit_pico_mld.c:301:16: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+    int result = 0;
+               ^
+test/unit/modunit_pico_tcp.c:178:31: style: The scope of the variable 'is' can be reduced. [variableScope]
+    struct tcp_input_segment *is;
+                              ^
+test/unit/modunit_pico_tcp.c:231:31: style: The scope of the variable 'is' can be reduced. [variableScope]
+    struct tcp_input_segment *is;
+                              ^
+test/unit/unit_dhcp.c:10:10: style: The scope of the variable 'gw_txt_addr' can be reduced. [variableScope]
+    char gw_txt_addr[30];
+         ^
+test/unit/unit_ipv4.c:25:9: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        snprintf(devname, 8, "nul%d", i);
+        ^
+test/unit/unit_ipv4.c:295:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("filter_id1 = %d\n", filter_id1);
+    ^
+test/unit/unit_ipv4.c:185:14: style: Variable 'nat_port' is reassigned a value before the old one has been used. [redundantAssignment]
+    nat_port = udp->trans.sport;
+             ^
+test/unit/unit_ipv4.c:177:14: note: nat_port is assigned
+    nat_port = udp->trans.sport;
+             ^
+test/unit/unit_ipv4.c:185:14: note: nat_port is overwritten
+    nat_port = udp->trans.sport;
+             ^
+test/unit/unit_ipv4.c:299:17: style: The comparison 'ret > 0' is always false. [knownConditionTrueFalse]
+    fail_if(ret > 0, "Error adding filter\n");
+                ^
+test/unit/unit_ipv4.c:261:15: note: 'ret' is assigned value '0' here.
+    int ret = 0;
+              ^
+test/unit/unit_ipv4.c:299:17: note: The comparison 'ret > 0' is always false.
+    fail_if(ret > 0, "Error adding filter\n");
+                ^
+test/unit/unit_ipv4.c:294:24: style: Checking if unsigned expression 'filter_id1' is less than zero. [unsignedLessThanZero]
+    fail_if(filter_id1 <= 0, "Error adding filter\n");
+                       ^
+test/unit/unit_ipv4.c:321:24: style: Checking if unsigned expression 'filter_id1' is less than zero. [unsignedLessThanZero]
+    fail_if(filter_id1 <= 0, "Error adding exact filter\n");
+                       ^
+test/unit/unit_ipv4.c:339:24: style: Checking if unsigned expression 'filter_id1' is less than zero. [unsignedLessThanZero]
+    fail_if(filter_id1 <= 0, "Error adding masked filter\n");
+                       ^
+test/unit/unit_ipv4.c:359:24: style: Checking if unsigned expression 'filter_id1' is less than zero. [unsignedLessThanZero]
+    fail_if(filter_id1 <= 0, "Error adding bad filter\n");
+                       ^
+test/unit/unit_ipv4.c:688:17: style: Condition '++i>2' is always false [knownConditionTrueFalse]
+        if (++i > 2)
+                ^
+test/unit/unit_ipv4.c:685:9: note: Assignment 'i=0', assigned value is 0
+    i = 0;
+        ^
+test/unit/unit_ipv4.c:688:17: note: Condition '++i>2' is always false
+        if (++i > 2)
+                ^
+test/unit/unit_ipv4.c:719:17: style: Condition '++i>1' is always false [knownConditionTrueFalse]
+        if (++i > 1)
+                ^
+test/unit/unit_ipv4.c:716:9: note: Assignment 'i=0', assigned value is 0
+    i = 0;
+        ^
+test/unit/unit_ipv4.c:719:17: note: Condition '++i>1' is always false
+        if (++i > 1)
+                ^
+test/unit/unit_ipv4.c:752:17: style: Condition '++i>2' is always false [knownConditionTrueFalse]
+        if (++i > 2)
+                ^
+test/unit/unit_ipv4.c:749:9: note: Assignment 'i=0', assigned value is 0
+    i = 0;
+        ^
+test/unit/unit_ipv4.c:752:17: note: Condition '++i>2' is always false
+        if (++i > 2)
+                ^
+test/unit/unit_ipv4.c:793:17: style: Condition '++i>2' is always false [knownConditionTrueFalse]
+        if (++i > 2)
+                ^
+test/unit/unit_ipv4.c:790:9: note: Assignment 'i=0', assigned value is 0
+    i = 0;
+        ^
+test/unit/unit_ipv4.c:793:17: note: Condition '++i>2' is always false
+        if (++i > 2)
+                ^
+test/unit/unit_ipv4.c:691:18: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv4.c:400:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+test/unit/unit_ipv4.c:691:18: note: Null pointer dereference
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv4.c:722:18: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv4.c:400:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+test/unit/unit_ipv4.c:722:18: note: Null pointer dereference
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv4.c:755:18: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv4.c:400:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+test/unit/unit_ipv4.c:755:18: note: Null pointer dereference
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv4.c:796:18: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv4.c:400:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+test/unit/unit_ipv4.c:796:18: note: Null pointer dereference
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv6.c:737:93: error: Invalid memcmp() argument nr 3. A non-boolean value is required. [invalidFunctionArgBool]
+        if (memcmp(&source->ip6, &mreq_source[3].mcast_source_addr, sizeof(struct pico_ip6) == 0)) { /* OK */
+                                                                                            ^
+test/unit/unit_ipv6.c:625:17: style: Condition '++i>2' is always false [knownConditionTrueFalse]
+        if (++i > 2)
+                ^
+test/unit/unit_ipv6.c:621:9: note: Assignment 'i=0', assigned value is 0
+    i = 0;
+        ^
+test/unit/unit_ipv6.c:625:17: note: Condition '++i>2' is always false
+        if (++i > 2)
+                ^
+test/unit/unit_ipv6.c:658:17: style: Condition '++i>1' is always false [knownConditionTrueFalse]
+        if (++i > 1)
+                ^
+test/unit/unit_ipv6.c:655:9: note: Assignment 'i=0', assigned value is 0
+    i = 0;
+        ^
+test/unit/unit_ipv6.c:658:17: note: Condition '++i>1' is always false
+        if (++i > 1)
+                ^
+test/unit/unit_ipv6.c:692:17: style: Condition '++i>2' is always false [knownConditionTrueFalse]
+        if (++i > 2)
+                ^
+test/unit/unit_ipv6.c:688:9: note: Assignment 'i=0', assigned value is 0
+    i = 0;
+        ^
+test/unit/unit_ipv6.c:692:17: note: Condition '++i>2' is always false
+        if (++i > 2)
+                ^
+test/unit/unit_ipv6.c:733:17: style: Condition '++i>2' is always false [knownConditionTrueFalse]
+        if (++i > 2)
+                ^
+test/unit/unit_ipv6.c:730:9: note: Assignment 'i=0', assigned value is 0
+    i = 0;
+        ^
+test/unit/unit_ipv6.c:733:17: note: Condition '++i>2' is always false
+        if (++i > 2)
+                ^
+test/unit/unit_ipv6.c:628:18: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv6.c:338:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+test/unit/unit_ipv6.c:628:18: note: Null pointer dereference
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv6.c:661:18: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv6.c:338:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+test/unit/unit_ipv6.c:661:18: note: Null pointer dereference
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv6.c:695:18: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv6.c:338:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+test/unit/unit_ipv6.c:695:18: note: Null pointer dereference
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv6.c:736:18: warning:inconclusive: Possible null pointer dereference: index [nullPointer]
+        source = index->keyValue;
+                 ^
+test/unit/unit_ipv6.c:338:36: note: Assignment 'index=NULL', assigned value is 0
+    struct pico_tree_node *index = NULL;
+                                   ^
+test/unit/unit_ipv6.c:736:18: note: Null pointer dereference
+        source = index->keyValue;
+                 ^
+test/unit/unit_mem_manager.c:1976:16: error: Memory leak: next [memleak]
+    heap_page->next = malloc(PICO_MEM_PAGE_SIZE);
+               ^
+test/unit/unit_mem_manager.c:1982:16: error: Memory leak: next [memleak]
+    heap_page->next = malloc(PICO_MEM_PAGE_SIZE);
+               ^
+test/unit/unit_mem_manager.c:1988:16: error: Memory leak: next [memleak]
+    heap_page->next = malloc(PICO_MEM_PAGE_SIZE);
+               ^
+test/unit/unit_mem_manager.c:1994:16: error: Memory leak: next [memleak]
+    heap_page->next = NULL;
+               ^
+test/unit/unit_mem_manager.c:526:12: style: Variable 'lenptr' is reassigned a value before the old one has been used. [redundantAssignment]
+    lenptr = &slabsize2;
+           ^
+test/unit/unit_mem_manager.c:485:12: note: lenptr is assigned
+    lenptr = &slabsize1;
+           ^
+test/unit/unit_mem_manager.c:526:12: note: lenptr is overwritten
+    lenptr = &slabsize2;
+           ^
+test/unit/unit_mem_manager.c:1415:22: style: Variable 'page0->slab_size' is reassigned a value before the old one has been used. [redundantAssignment]
+    page0->slab_size = PICO_MEM_DEFAULT_SLAB_SIZE;
+                     ^
+test/unit/unit_mem_manager.c:1412:22: note: page0->slab_size is assigned
+    page0->slab_size = PICO_MEM_DEFAULT_SLAB_SIZE;
+                     ^
+test/unit/unit_mem_manager.c:1415:22: note: page0->slab_size is overwritten
+    page0->slab_size = PICO_MEM_DEFAULT_SLAB_SIZE;
+                     ^
+test/unit/unit_mem_manager.c:1426:22: style: Variable 'page1->slab_size' is reassigned a value before the old one has been used. [redundantAssignment]
+    page1->slab_size = PICO_MEM_DEFAULT_SLAB_SIZE;
+                     ^
+test/unit/unit_mem_manager.c:1423:22: note: page1->slab_size is assigned
+    page1->slab_size = PICO_MEM_DEFAULT_SLAB_SIZE;
+                     ^
+test/unit/unit_mem_manager.c:1426:22: note: page1->slab_size is overwritten
+    page1->slab_size = PICO_MEM_DEFAULT_SLAB_SIZE;
+                     ^
+test/unit/unit_mem_manager.c:1468:13: style: Variable 'byteptr' is reassigned a value before the old one has been used. [redundantAssignment]
+    byteptr = (uint8_t*) (page1 + 1);
+            ^
+test/unit/unit_mem_manager.c:1466:13: note: byteptr is assigned
+    byteptr += block->internals.heap_block.size;
+            ^
+test/unit/unit_mem_manager.c:1468:13: note: byteptr is overwritten
+    byteptr = (uint8_t*) (page1 + 1);
+            ^
+test/unit/unit_mem_manager.c:1671:22: style: Variable 'page0->slab_size' is reassigned a value before the old one has been used. [redundantAssignment]
+    page0->slab_size = PICO_MEM_DEFAULT_SLAB_SIZE;
+                     ^
+test/unit/unit_mem_manager.c:1668:22: note: page0->slab_size is assigned
+    page0->slab_size = PICO_MEM_DEFAULT_SLAB_SIZE;
+                     ^
+test/unit/unit_mem_manager.c:1671:22: note: page0->slab_size is overwritten
+    page0->slab_size = PICO_MEM_DEFAULT_SLAB_SIZE;
+                     ^
+test/unit/unit_mem_manager.c:799:14: style: Variable 'sizeLeft' is assigned a value that is never used. [unreadVariable]
+    sizeLeft -= (uint32_t)sizeof(struct pico_mem_block);
+             ^
+test/unit/unit_mem_manager.c:800:14: style: Variable 'sizeLeft' is assigned a value that is never used. [unreadVariable]
+    sizeLeft -= block->internals.heap_block.size;
+             ^
+test/unit/unit_mem_manager.c:809:14: style: Variable 'sizeLeft' is assigned a value that is never used. [unreadVariable]
+    sizeLeft -= (uint32_t)sizeof(struct pico_mem_block);
+             ^
+test/unit/unit_mem_manager.c:810:14: style: Variable 'sizeLeft' is assigned a value that is never used. [unreadVariable]
+    sizeLeft -= block->internals.heap_block.size;
+             ^
+test/unit/unit_mem_manager.c:819:14: style: Variable 'sizeLeft' is assigned a value that is never used. [unreadVariable]
+    sizeLeft -= (uint32_t)sizeof(struct pico_mem_block);
+             ^
+test/unit/unit_mem_manager.c:820:14: style: Variable 'sizeLeft' is assigned a value that is never used. [unreadVariable]
+    sizeLeft -= block->internals.heap_block.size;
+             ^
+test/unit/unit_mem_manager.c:922:14: style: Variable 'sizeLeft' is assigned a value that is never used. [unreadVariable]
+    sizeLeft -= (uint32_t)sizeof(struct pico_mem_block);
+             ^
+test/unit/unit_mem_manager.c:1464:15: style: Variable 'sizeLeft1' is assigned a value that is never used. [unreadVariable]
+    sizeLeft1 -= (uint32_t)sizeof(struct pico_mem_block);
+              ^
+test/unit/unit_mem_manager.c:1483:15: style: Variable 'sizeLeft2' is assigned a value that is never used. [unreadVariable]
+    sizeLeft2 -= (uint32_t)sizeof(struct pico_mem_block);
+              ^
+test/unit/unit_mem_manager.c:1484:13: style: Variable 'byteptr' is assigned a value that is never used. [unreadVariable]
+    byteptr += sizeof(struct pico_mem_block);
+            ^
+test/unit/unit_mem_manager.c:1485:13: style: Variable 'byteptr' is assigned a value that is never used. [unreadVariable]
+    byteptr += block->internals.heap_block.size;
+            ^
+test/unit/unit_mem_manager.c:1695:15: style: Variable 'sizeLeft1' is assigned a value that is never used. [unreadVariable]
+    sizeLeft1 -= (uint32_t)sizeof(struct pico_mem_block);
+              ^
+test/unit/unit_mem_manager.c:1787:13: style: Variable 'byteptr' is assigned a value that is never used. [unreadVariable]
+    byteptr = pico_mem_zalloc(1);
+            ^
+test/unit/unit_mocks.c:41:47: style: Condition 'printMethod==1' is always false [knownConditionTrueFalse]
+    }else if((printbufactive) && (printMethod == 1)) {
+                                              ^
+test/unit/unit_mocks.c:23:27: note: Assignment 'printMethod=0', assigned value is 0
+    uint8_t printMethod = 0;
+                          ^
+test/unit/unit_mocks.c:41:47: note: Condition 'printMethod==1' is always false
+    }else if((printbufactive) && (printMethod == 1)) {
+                                              ^
+test/unit/unit_mocks.c:26:41: style: The comparison 'printMethod == 0' is always true. [knownConditionTrueFalse]
+    if((printbufactive) && (printMethod == 0)) {
+                                        ^
+test/unit/unit_mocks.c:23:27: note: 'printMethod' is assigned value '0' here.
+    uint8_t printMethod = 0;
+                          ^
+test/unit/unit_mocks.c:26:41: note: The comparison 'printMethod == 0' is always true.
+    if((printbufactive) && (printMethod == 0)) {
+                                        ^
+test/unit/unit_mocks.c:25:14: style: The scope of the variable 'cntr2' can be reduced. [variableScope]
+    uint32_t cntr2 = 0;
+             ^
+test/unit/unit_mocks.c:24:19: style: Variable 'cntr' is assigned a value that is never used. [unreadVariable]
+    uint32_t cntr = 0;
+                  ^
+test/unit/unit_rbtree.c:21:11: style: The scope of the variable 'e' can be reduced. [variableScope]
+    elem *e;
+          ^
+test/unit/unit_socket.c:308:9: style: Variable 'ret' is reassigned a value before the old one has been used. [redundantAssignment]
+    ret = pico_socket_getoption(sk_tcp, PICO_TCP_NODELAY, &getnodelay);
+        ^
+test/unit/unit_socket.c:304:13: note: ret is assigned
+        ret = pico_socket_setoption(sk_tcp, PICO_TCP_NODELAY, &nodelay);
+            ^
+test/unit/unit_socket.c:308:9: note: ret is overwritten
+    ret = pico_socket_getoption(sk_tcp, PICO_TCP_NODELAY, &getnodelay);
+        ^
+test/unit/unit_timer.c:12:79: portability: '(void*)0xff00' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+        void (*timer)(pico_time, void *) =(void (*)(pico_time, void *))0xff00 + i;
+                                                                              ^
+test/unit/unit_timer.c:13:36: portability: '(void*)0xaa00' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+        void *arg = ((void*)0xaa00 + i);
+                                   ^
+test/unit/unit_timer.c:19:79: portability: '(void*)0xff00' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+        void (*timer)(pico_time, void *) =(void (*)(pico_time, void *))0xff00 + i;
+                                                                              ^
+test/unit/unit_timer.c:20:36: portability: '(void*)0xaa00' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+        void *arg = ((void*)0xaa00 + i);
+                                   ^
+test/examples/iperfc.c:98:0: style: The function 'app_iperfc' is never used. [unusedFunction]
+
+^
+test/examples/tftp.c:429:0: style: The function 'app_tftp' is never used. [unusedFunction]
+
+^
+test/examples/iperfc.c:36:0: style: The function 'buf_paint' is never used. [unusedFunction]
+
+^
+modules/pico_dev_mock.c:250:0: style: The function 'mock_get_sender_ip4' is never used. [unusedFunction]
+
+^
+test/unit/unit_mocks.c:7:0: style: The function 'mock_print_protocol' is never used. [unusedFunction]
+
+^
+test/examples/iperfc.c:29:0: style: The function 'panic' is never used. [unusedFunction]
+
+^
+modules/pico_aodv.c:679:0: style: The function 'pico_aodv_add' is never used. [unusedFunction]
+
+^
+modules/pico_arp.c:543:0: style: The function 'pico_arp_get_neighbors' is never used. [unusedFunction]
+
+^
+modules/pico_dhcp_client.c:1058:0: style: The function 'pico_dhcp_client_abort' is never used. [unusedFunction]
+
+^
+modules/pico_dhcp_client.c:1069:0: style: The function 'pico_dhcp_get_domain' is never used. [unusedFunction]
+
+^
+modules/pico_dhcp_client.c:1064:0: style: The function 'pico_dhcp_get_hostname' is never used. [unusedFunction]
+
+^
+modules/pico_dhcp_client.c:1027:0: style: The function 'pico_dhcp_get_identifier' is never used. [unusedFunction]
+
+^
+modules/pico_dhcp_client.c:1047:0: style: The function 'pico_dhcp_get_nameserver' is never used. [unusedFunction]
+
+^
+modules/pico_dhcp_client.c:1042:0: style: The function 'pico_dhcp_get_netmask' is never used. [unusedFunction]
+
+^
+modules/pico_dhcp_server.c:409:0: style: The function 'pico_dhcp_server_destroy' is never used. [unusedFunction]
+
+^
+modules/pico_dns_sd.c:464:0: style: The function 'pico_dns_sd_browse_service' is never used. [unusedFunction]
+
+^
+stack/pico_socket_multicast.c:1459:0: style: The function 'pico_getsockopt_mcast' is never used. [unusedFunction]
+
+^
+modules/pico_icmp6.c:275:0: style: The function 'pico_icmp6_packet_filtered' is never used. [unusedFunction]
+
+^
+modules/pico_dev_ipc.c:81:0: style: The function 'pico_ipc_create' is never used. [unusedFunction]
+
+^
+modules/pico_ipv6.c:2124:0: style: The function 'pico_ipv6_dev_routing_disable' is never used. [unusedFunction]
+
+^
+modules/pico_ipv6.c:363:0: style: The function 'pico_ipv6_is_solicited' is never used. [unusedFunction]
+
+^
+modules/pico_mm.c:1558:0: style: The function 'pico_mem_profile_collect_data' is never used. [unusedFunction]
+
+^
+modules/pico_mm.c:1610:0: style: The function 'pico_mem_profile_manager' is never used. [unusedFunction]
+
+^
+modules/pico_mm.c:1509:0: style: The function 'pico_mem_profile_scan_data' is never used. [unusedFunction]
+
+^
+modules/pico_mm.c:1598:0: style: The function 'pico_mem_profile_used_size' is never used. [unusedFunction]
+
+^
+modules/pico_mld.c:1145:0: style: The function 'pico_mld_checksum' is never used. [unusedFunction]
+
+^
+stack/pico_socket_multicast.c:1454:0: style: The function 'pico_multicast_delete' is never used. [unusedFunction]
+
+^
+modules/pico_posix.c:23:0: style: The function 'pico_mutex_destroy' is never used. [unusedFunction]
+
+^
+modules/pico_posix.c:15:0: style: The function 'pico_mutex_init' is never used. [unusedFunction]
+
+^
+modules/pico_posix.c:29:0: style: The function 'pico_mutex_lock' is never used. [unusedFunction]
+
+^
+modules/pico_posix.c:37:0: style: The function 'pico_mutex_unlock' is never used. [unusedFunction]
+
+^
+modules/pico_olsr.c:1077:0: style: The function 'pico_olsr_init' is never used. [unusedFunction]
+
+^
+modules/pico_dev_pcap.c:88:0: style: The function 'pico_pcap_create_fromfile' is never used. [unusedFunction]
+
+^
+modules/pico_dev_pcap.c:93:0: style: The function 'pico_pcap_create_live' is never used. [unusedFunction]
+
+^
+modules/pico_dev_ppp.c:2098:0: style: The function 'pico_ppp_destroy' is never used. [unusedFunction]
+
+^
+modules/pico_posix.c:54:0: style: The function 'pico_sem_destroy' is never used. [unusedFunction]
+
+^
+modules/pico_posix.c:46:0: style: The function 'pico_sem_init' is never used. [unusedFunction]
+
+^
+modules/pico_posix.c:60:0: style: The function 'pico_sem_post' is never used. [unusedFunction]
+
+^
+modules/pico_posix.c:68:0: style: The function 'pico_sem_wait' is never used. [unusedFunction]
+
+^
+stack/pico_socket_multicast.c:1468:0: style: The function 'pico_setsockopt_mcast' is never used. [unusedFunction]
+
+^
+stack/pico_socket.c:1523:0: style: The function 'pico_socket_getpeername' is never used. [unusedFunction]
+
+^
+stack/pico_socket.c:360:0: style: The function 'pico_sockets_find' is never used. [unusedFunction]
+
+^
+stack/pico_socket.c:2135:0: style: The function 'pico_sockets_loop' is never used. [unusedFunction]
+
+^
+stack/pico_stack.c:810:0: style: The function 'pico_stack_loop' is never used. [unusedFunction]
+
+^
+stack/pico_stack.c:514:0: style: The function 'pico_stack_recv_zerocopy' is never used. [unusedFunction]
+
+^
+stack/pico_stack.c:519:0: style: The function 'pico_stack_recv_zerocopy_ext_buffer' is never used. [unusedFunction]
+
+^
+stack/pico_stack.c:524:0: style: The function 'pico_stack_recv_zerocopy_ext_buffer_notify' is never used. [unusedFunction]
+
+^
+modules/pico_tftp.c:1230:0: style: The function 'pico_tftp_close_server' is never used. [unusedFunction]
+
+^
+modules/pico_tftp.c:1242:0: style: The function 'pico_tftp_get_file_size' is never used. [unusedFunction]
+
+^
+modules/pico_posix.c:89:0: style: The function 'pico_thread_create' is never used. [unusedFunction]
+
+^
+stack/pico_stack.c:65:0: style: The function 'pico_to_lowercase' is never used. [unusedFunction]
+
+^
+stack/pico_socket.c:2240:0: style: The function 'pico_transport_error' is never used. [unusedFunction]
+
+^
+stack/pico_tree.c:101:0: style: The function 'pico_tree_prev' is never used. [unusedFunction]
+
+^
+modules/pico_dev_ppp.c:622:0: style: The function 'ppp_modem_send_cgatt_q' is never used. [unusedFunction]
+
+^
+modules/pico_dev_ppp.c:630:0: style: The function 'ppp_modem_send_cgdcont_q' is never used. [unusedFunction]
+
+^
+modules/pico_dev_ppp.c:639:0: style: The function 'ppp_modem_send_cgreg_q' is never used. [unusedFunction]
+
+^
+modules/pico_dev_ppp.c:648:0: style: The function 'ppp_modem_send_creg_q' is never used. [unusedFunction]
+
+^
+modules/pico_dev_tap_windows.c:639:0: style: The function 'tap_win_getinfo' is never used. [unusedFunction]
+
+^
+modules/pico_dev_tap_windows.c:656:0: style: The function 'tun_show_debug' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
